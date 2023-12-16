@@ -4,13 +4,15 @@ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { ContributeComponent } from './contribute/contribute.component';
 import { CountryComponent } from './country/country.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
-  { path: '', component: HeaderComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contribute', component: ContributeComponent },
-  { path: 'country', component: CountryComponent },
-  { path: 'discover', component: AboutComponent },
+  { path: 'src/app/Header', component: HeaderComponent },
+  { path: 'src/app/About', component: AboutComponent },
+  { path: 'src/app/Products', component: ProductsComponent},
+  { path: 'src/app/Country', component: CountryComponent },
+  { path: 'src/app/Contribute', component: ContributeComponent },
+  { path: 'src/app/Discover', component: AboutComponent },
   // Ajouter d'autres composants//
 ];
 
