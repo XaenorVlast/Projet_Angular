@@ -1,4 +1,3 @@
-<!-- Code HTML du fichier header.component.html -->
 <div id="page">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
@@ -49,6 +48,15 @@
         <li class="nav-item">
           <a class="nav-link" href="src/app/Contribute">Contribute</a>
         </li>
+
+        <!-- Onglet "Producers" -->
+        <li class="nav-item">
+          <a class="nav-link" href="src/app/Producers">Producers</a>
+        </li>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search </button>
+        </form>
       </ul>
 
       <!-- Bouton "Sign in" à droite -->
@@ -59,4 +67,4 @@
       </div>
     </div>
   </nav>
-</div>
+  <router-outlet></router-outlet>
