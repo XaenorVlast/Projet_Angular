@@ -10,6 +10,7 @@ import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { CountryComponent } from './country/country.component';
+import { ProducersComponent } from './producers/producers.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { CountryComponent } from './country/country.component';
     AboutComponent,
     FooterComponent,
     CountryComponent,
+    ProducersComponent,
   ],
   imports: [
     BrowserModule,
