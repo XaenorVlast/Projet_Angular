@@ -1,0 +1,48 @@
+body {
+  background-color: #f8f9fa;
+  margin: 0; /* Supprimer la marge par défaut du corps du document */
+  padding: 0; /* Supprimer le rembourrage par défaut du corps du document */
+}
+
+.fixed-content {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%; /* Occuper toute la largeur de la fenêtre */
+}
+
+.fixed-content img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.fixed-content p {
+  margin-bottom: 10px;
+}
+
+.inline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inline-list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.inline-list li:last-child {
+  margin-right: 0;
+}
+
+.inline-list a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.inline-list a:hover {
+  text-decoration: underline;
+}
