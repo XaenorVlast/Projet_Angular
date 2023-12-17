@@ -1,0 +1,53 @@
+body {
+  font-family: 'Arial', sans-serif; /* Change the font-family as needed */
+}
+
+h2, h3, h4 {
+  font-family: 'Serif'; /* Change the font-family as needed */
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card-container {
+  margin-bottom: 100px; /* Ajustez la valeur selon la hauteur de votre footer */
+}
+
+.container {
+  margin-top: 50px;
+}
+
+/* Custom animation class */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Animate fade and slideInUp */
+.fade-and-slide {
+  animation: fadeAndSlide 1s ease;
+}
+
+@keyframes fadeAndSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add fade-and-slide class to the cards */
+.card.animated {
+  visibility: visible !important;
+}
+
+/* Retirez la déclaration background-color du sélecteur body */
+.container {
+  margin-top: 50px;
+  background-color: green; /* Ajoutez la couleur de fond ici */
+}

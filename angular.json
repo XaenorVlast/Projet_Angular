@@ -122,7 +122,10 @@
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "https://code.jquery.com/jquery-3.3.1.slim.min.js",
               "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
-              "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+              "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js",
+              "https://code.jquery.com/jquery-3.5.1.slim.min.js",
+              "https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js",
+              "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
             ]
           }
         }

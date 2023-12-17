@@ -7,6 +7,7 @@ import { CountryComponent } from './country/country.component';
 import { ProductsComponent } from './products/products.component';
 import { DiscoverComponent } from './discover/discover.component';
 import { ProducersComponent } from './producers/producers.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: 'src/app/Header', component: HeaderComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'src/app/Country', component: CountryComponent },
   { path: 'src/app/Contribute', component: ContributeComponent },
   { path: 'src/app/Discover', component: DiscoverComponent},
-  { path: 'src/app/Producers', component: ProducersComponent}
+  { path: 'src/app/Producers', component: ProducersComponent},
+  { path: 'src/app/Footer', component: FooterComponent}
   // Ajouter d'autres composants//
 ];
 
