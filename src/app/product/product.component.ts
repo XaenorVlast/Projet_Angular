@@ -1,5 +1,8 @@
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { Product } from '../models/product.models';
+
+
 
 @Component({
   selector: 'app-product',
@@ -7,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./product.component.scss'],
 })
 export class ProductComponent implements OnInit {
+  @Input() product!: Product;
 
   ngOnInit(): void {}
 
