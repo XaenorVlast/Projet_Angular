@@ -9,11 +9,13 @@ import { ProducersComponent } from './producers/producers.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductDetailComponent } from './productdetail/productdetail.component';
 import { ProductLetterComponent } from './productletter/productletter.component';
+import { ProductListComponent } from './productlist/productlist.component';
 
 const routes: Routes = [
   { path: 'Header', component: HeaderComponent },
   { path: 'About', component: AboutComponent },
-  { path: 'Product', component: ProductComponent },
+  { path: '', component: ProductListComponent },
+  { path: '', component: ProductComponent },
   { path: 'Contribute', component: ContributeComponent },
   { path: 'Discover', component: DiscoverComponent },
   { path: 'Producers', component: ProducersComponent },
