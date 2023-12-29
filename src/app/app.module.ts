@@ -16,16 +16,14 @@ import { ContributeComponent } from './contribute/contribute.component';
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './productlist/productlist.component';
 import { ProducersComponent } from './producers/producers.component';
-import { CountryComponent } from './country/country.component';
 import { ProductDetailComponent } from './productdetail/productdetail.component';
 import { ProductLetterComponent } from './productletter/productletter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent?
+    AboutComponent,
     ContributeComponent,
-    CountryComponent,
     DiscoverComponent,
     FooterComponent,
     HeaderComponent,
