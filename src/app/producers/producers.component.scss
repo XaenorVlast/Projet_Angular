@@ -1,24 +1,99 @@
-body {
-  font-family: 'Arial', sans-serif; /* Change the font-family as needed */
+/* Header Styling */
+.navbar {
+  background-color: #ffc107; /* Yellow background color */
+  font-family: 'Your Preferred Font', sans-serif; /* Change the font-family as needed */
+  font-weight: bold;
 }
 
-h2, h3, h4 {
-  font-family: 'Serif'; /* Change the font-family as needed */
+.navbar-nav .nav-link {
+  color: #343a40; /* Dark color for tabs */
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.5;
+.navbar-nav .nav-link:hover {
+  border-bottom: 2px solid #343a40; /* Underline effect on hover */
 }
 
-.card-container {
-  margin-bottom: 100px; /* Ajustez la valeur selon la hauteur de votre footer */
+/* Logo Styling */
+#logo {
+  height: 40px;
+  width: auto;
 }
 
-.container {
-  margin-top: 50px;
+/* Search Form Styling */
+.form-control {
+  border-radius: 0; /* Remove border-radius for form control */
 }
 
+/* Search Button Styling */
+.btn-outline-success {
+  color: #28a745; /* Text color for the button */
+  border-color: #28a745; /* Border color for the button */
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
+}
+
+/* Navbar Right Section Styling */
+.navbar-nav.ml-auto {
+  margin-right: 20px;
+}
+
+.btn-primary {
+  background-color: #ffc107; /* Yellow background color for Sign in button */
+  border-color: #ffc107; /* Border color for Sign in button */
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #e0a800; /* Darker yellow background color on hover */
+  border-color: #e0a800; /* Darker border color on hover */
+}
+
+/* Footer Styling */
+.fixed-content {
+  background-color: #343a40; /* Dark background color */
+  color: #ffffff; /* White text color */
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.fixed-content img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.fixed-content p {
+  margin-bottom: 10px;
+}
+
+.inline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inline-list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.inline-list li:last-child {
+  margin-right: 0;
+}
+
+.inline-list a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.inline-list a:hover {
+  text-decoration: underline;
+}
 /* Custom animation class */
 .animated {
   animation-duration: 1s;
@@ -27,7 +102,7 @@ p {
 
 /* Animate fade and slideInUp */
 .fade-and-slide {
-  animation: fadeAndSlide 1s ease;
+  animation: fadeAndSlide 0.25s ease;
 }
 
 @keyframes fadeAndSlide {
@@ -41,13 +116,23 @@ p {
   }
 }
 
+/* Ajoutez ces styles pour l'effet de survol sur chaque carte */
+.card.animated:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
 /* Add fade-and-slide class to the cards */
 .card.animated {
   visibility: visible !important;
 }
 
-/* Retirez la déclaration background-color du sélecteur body */
-.container {
-  margin-top: 50px;
-  background-color: green; /* Ajoutez la couleur de fond ici */
+.img {
+  width: 200px;
+}
+.card {
+  max-width: 400px; /* Réglez la largeur maximale selon vos besoins */
+  margin: 0 auto; /* Centrez les cards horizontalement */
 }

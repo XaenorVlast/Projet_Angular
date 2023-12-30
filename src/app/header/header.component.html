@@ -1,5 +1,5 @@
 <div id="page">
-  <nav class="navbar navbar-expand-lg navbar-primary bg-green">
+  <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
     <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,35 +8,13 @@
       <img id="logo" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg" alt="Open Food Facts logo">
 
       <ul class="navbar-nav mx-auto">
-        <!-- Onglet "Products" avec un menu déroulant -->
+        <!-- Onglet "About" avec un menu déroulant -->
         <li class="nav-item">
           <a class="nav-link" href="src/app/About">About</a>
         </li>
         <!-- Onglet "Products" avec un menu déroulant -->
         <li class="nav-item">
           <a class="nav-link" href="src/app/Product">Products</a>
-        </li>
-
-        <!-- Onglet "Country" avec un menu déroulant pour choisir un pays -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="src/app/Country" role="button" data-toggle="dropdown" aria-expanded="false">Country</a>
-          <ul class="dropdown-menu">
-            <!-- Exemple d'utilisation d'une flèche pour choisir un pays -->
-            <li class="dropdown-item">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">
-                    <span class="material-icons">arrow_drop_down</span>
-                  </span>
-                </div>
-                <select class="form-select">
-                  <li><button class="dropdown-item" type="button">Action</button></li>
-                  <li><button class="dropdown-item" type="button">Another action</button></li>
-                  <li><button class="dropdown-item" type="button">Something else here</button></li>
-                </select>
-              </div>
-            </li>
-          </ul>
         </li>
 
         <!-- Onglet "Discover" -->
@@ -53,17 +31,15 @@
         <li class="nav-item">
           <a class="nav-link" href="src/app/Producers">Producers</a>
         </li>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search </button>
-        </form>
       </ul>
-
-      <!-- Bouton "Sign in" à droite -->
-      <div class="navbar-nav ml-auto">
-        <button type="button" class="btn btn-primary">
-          <span class="material-icons" style="margin-right: 8px;">Sign in</span>
-        </button>
-      </div>
+    </div>
+    <div class="ml-auto">
+      <a data-mdb-ripple-init class="btn btn-white px-3" href="https://github.com/openfoodfacts" role="button">
+        <div class="d-flex align-items-center">
+          <i class="fab fa-github mr-2"></i> <!-- Icône existante -->
+          <img src="/assets/github.png" alt="Github" style="width: 20px; height: 20px;">
+        </div>
+      </a>
     </div>
   </nav>
+</div>

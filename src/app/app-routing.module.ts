@@ -12,16 +12,16 @@ import { ProductLetterComponent } from './productletter/productletter.component'
 import { ProductListComponent } from './productlist/productlist.component';
 
 const routes: Routes = [
-  { path: 'Header', component: HeaderComponent },
-  { path: 'About', component: AboutComponent },
-  { path: '', component: ProductListComponent },
-  { path: '', component: ProductComponent },
-  { path: 'Contribute', component: ContributeComponent },
-  { path: 'Discover', component: DiscoverComponent },
-  { path: 'Producers', component: ProducersComponent },
-  { path: 'Footer', component: FooterComponent },
-  { path: 'products/:id/detail', component: ProductDetailComponent },
-  { path: 'products/:letter', component: ProductLetterComponent },
+  { path: 'src/app/Header', component: HeaderComponent },
+  { path: 'src/app/About', component: AboutComponent },
+  { path: 'src/app/Product', component: ProductListComponent },
+  { path: 'src/app/Product', component: ProductComponent },
+  { path: 'src/app/Contribute', component: ContributeComponent },
+  { path: 'src/app/Discover', component: DiscoverComponent },
+  { path: 'src/app/Producers', component: ProducersComponent },
+  { path: 'src/app/Footer', component: FooterComponent },
+  { path: 'src/app/Products/:id/detail', component: ProductDetailComponent },
+  { path: 'src/app/Products/:letter', component: ProductLetterComponent },
 ];
 
 @NgModule({
