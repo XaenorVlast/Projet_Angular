@@ -17,6 +17,7 @@ import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './productlist/productlist.component';
 import { ProducersComponent } from './producers/producers.component';
 import { ProductDetailComponent } from './productdetail/productdetail.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProductDetailComponent } from './productdetail/productdetail.component'
     HeaderComponent,
     ProducersComponent,
     ProductComponent,
-    ProductListComponent
+    ProductListComponent,
+    AcceuilComponent
 
   ],
   imports: [
