@@ -13,8 +13,8 @@ export class ProductComponent implements OnInit {
   @Input() product!: Product;
   constructor(private router :Router) {}
   ngOnInit(): void {}
-  onViewFaceSnap() {
-    this.router.navigateByUrl(`${this.product.id}`);
+  choisirProduit() {
+    this.router.navigateByUrl(`Product/${this.product.id}`);
   }
 }
 

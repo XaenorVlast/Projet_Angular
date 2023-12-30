@@ -25,6 +25,6 @@ loadProductsUnit(faceSnapId:number): void {
   });
 }
 returnAcceuil() {
-  this.router.navigateByUrl('');
+  this.router.navigateByUrl(`/Product`);
 }
 }
