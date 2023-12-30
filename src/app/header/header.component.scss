@@ -1,5 +1,24 @@
-.img {
-    margin: 8px; 
-    height: 48px; 
-    width: auto;
+#page .navbar {
+  height: 80px; /* Adjust the height as needed */
+  border-bottom: 2px solid #000; /* Border for the navbar */
+}
+
+#page .navbar img#logo {
+  max-height: 60px; /* Adjust the max height of the logo to fit within the navbar */
+  margin: 10px; /* Adjust the margin to center the logo vertically within the taller navbar */
+}
+
+#page .navbar-nav .nav-link {
+  padding-top: 25px; /* Adjust the padding to vertically center the text within the taller navbar */
+  padding-bottom: 25px; /* Adjust the padding to vertically center the text within the taller navbar */
+  font-size: 25px; /* Adjust the font size for the nav links */
+  font-weight: bold;
+}
+
+#page .navbar-nav .btn-white {
+  font-size: 18px; /* Adjust the font size for the Github button */
+}
+
+#page .navbar-toggler-icon {
+  color: #000; /* Adjust the color of the navbar toggler icon */
 }

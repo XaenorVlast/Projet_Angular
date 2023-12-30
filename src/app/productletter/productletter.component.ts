@@ -7,7 +7,7 @@ import { ProductService } from '../services/product.service';
 @Component({
   selector: 'app-productletter',
   templateUrl: './productletter.component.html',
-  styleUrls: ['./productletter.component.css'],
+  styleUrls: ['./productletter.component.scss'],
 })
 export class ProductLetterComponent implements OnInit {
 
