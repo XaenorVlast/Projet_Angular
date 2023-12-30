@@ -1,18 +1,57 @@
-.card-img-top {
-    height: 200px; /* Ajustez la hauteur si nécessaire */
-    object-fit: cover; /* Garantit que l'image couvre la zone définie sans être déformée */
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column; /* Organise le contenu de la carte en colonne */
-  }
-  
-  .card-body {
-    flex: 1; /* Permet au corps de la carte de remplir l'espace restant dans la carte */
-  }
-  
-  .btn-primary {
-    margin-top: auto; /* Place le bouton en bas de la carte */
-  }
-  
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px; /* Largeur fixe des cartes */
+  margin: 5px; /* Ajustez selon l'espacement souhaité entre les cartes */
+  border: 1px solid #ddd; /* Bordure pour la définition */
+  border-radius: 10px; /* Bords arrondis */
+  overflow: hidden; /* Empêche le dépassement du contenu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre douce pour la profondeur */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation pour le survol */
+  cursor: pointer; /* Indique la cliquabilité */
+  height: auto; /* Hauteur auto pour contenir tout le contenu */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* L'effet de soulèvement */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée pour le survol */
+}
+
+.product-image {
+  width: 100%; /* L'image couvre toute la largeur de son conteneur */
+  height: 180px; /* Hauteur fixe pour toutes les images */
+  object-fit: contain; /* L'image s'adapte à la hauteur tout en restant entièrement visible */
+  background-color: white; /* Arrière-plan blanc pour les images qui ne remplissent pas tout l'espace */
+}
+
+.product-info {
+  padding: 10px;
+  text-align: center; /* Centre le texte */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permet à cette section de se développer pour remplir l'espace disponible */
+  justify-content: center; /* Centre le contenu verticalement */
+}
+.product-title {
+  font-size: 0.9em; /* Ajustez la taille de la police si nécessaire */
+  margin: 5px 0; /* Ajustez l'espacement comme vous le souhaitez */
+  white-space: normal; /* Permet au texte de passer à la ligne */
+  overflow: visible; /* Affiche tout le texte */
+  text-overflow: clip; /* Empêche le texte d'être tronqué avec des points de suspension */
+}
+.product-brand {
+  margin: 5px 0; /* Espacement standard pour le titre et la marque */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne suivante */
+  overflow: hidden; /* Cache le débordement de texte */
+  text-overflow: ellipsis; /* Ajoute des points de suspension si le texte déborde */
+}
+
+/* Ajustez la taille du texte si nécessaire pour qu'il rentre */
+.product-title {
+  font-size: 1em; /* Taille du titre */
+}
+
+.product-brand {
+  font-size: 0.9em; /* Taille de la marque */
+}
