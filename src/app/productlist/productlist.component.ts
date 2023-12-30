@@ -20,7 +20,7 @@ export class ProductListComponent implements OnInit {
   }
 
   loadProducts(): void {
-    this.productService.getProducts(this.currentPage, 12).subscribe(response => {
+    this.productService.getProducts(this.currentPage, 8).subscribe(response => {
       this.products = response.products;
     });
   }
