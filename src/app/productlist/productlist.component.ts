@@ -6,25 +6,33 @@ import { ProductService } from '../services/product.service';
 @Component({
   selector: 'app-productlist',
   templateUrl: './productlist.component.html',
- // styleUrls: ['./productlist.component.css'],
+  // styleUrls: ['./productlist.component.css'],
 })
 export class ProductListComponent implements OnInit {
   products!: Product[];
-  currentPage = 1;
+  currentPage!: number;
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    this.currentPage = this.productService.currentPage;
     this.loadProducts();
   }
 
   loadProducts(): void {
-    this.productService.getProducts(this.currentPage, 10).subscribe(response => {
+    this.productService.getProducts(this.currentPage, 12).subscribe(response => {
       this.products = response.products;
     });
   }
-  ChangePage(){
+  ChangePagePlus() {
     this.currentPage++;
+    this.loadProducts();
+  }
+  ChangePageMoin() {
+    if (this.currentPage === 1) {
+      return;
+    }
+    this.currentPage--;
     this.loadProducts();
   }
 }

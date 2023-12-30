@@ -17,7 +17,6 @@ import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './productlist/productlist.component';
 import { ProducersComponent } from './producers/producers.component';
 import { ProductDetailComponent } from './productdetail/productdetail.component';
-import { ProductLetterComponent } from './productletter/productletter.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,6 @@ import { ProductLetterComponent } from './productletter/productletter.component'
     HeaderComponent,
     ProducersComponent,
     ProductComponent,
-    ProductLetterComponent,
     ProductListComponent
 
   ],

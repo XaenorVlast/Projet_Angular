@@ -8,20 +8,17 @@ import { DiscoverComponent } from './discover/discover.component';
 import { ProducersComponent } from './producers/producers.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductDetailComponent } from './productdetail/productdetail.component';
-import { ProductLetterComponent } from './productletter/productletter.component';
 import { ProductListComponent } from './productlist/productlist.component';
 
 const routes: Routes = [
   { path: 'Header', component: HeaderComponent },
   { path: 'About', component: AboutComponent },
   { path: '', component: ProductListComponent },
-  { path: '', component: ProductComponent },
   { path: 'Contribute', component: ContributeComponent },
   { path: 'Discover', component: DiscoverComponent },
   { path: 'Producers', component: ProducersComponent },
   { path: 'Footer', component: FooterComponent },
-  { path: 'products/:id/detail', component: ProductDetailComponent },
-  { path: 'products/:letter', component: ProductLetterComponent },
+  { path: ':id', component: ProductDetailComponent },
 ];
 
 @NgModule({

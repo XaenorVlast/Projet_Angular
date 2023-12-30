@@ -1,0 +1,10 @@
+.product-card {
+    max-width: 300px; /* ou une autre taille fixe selon vos besoins */
+    margin: auto; /* pour centrer la carte */
+  }
+  
+  .card-img-top {
+    height: 200px; /* hauteur fixe pour l'image */
+    object-fit: cover; /* pour s'assurer que l'image couvre l'espace sans être déformée */
+  }
+  

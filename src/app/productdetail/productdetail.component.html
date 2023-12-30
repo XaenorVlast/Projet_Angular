@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+
+    <style>
+        .product-card {
+            max-width: 300px; /* ou une autre taille fixe selon vos besoins */
+            margin: auto; /* pour centrer la carte */
+        }
+        .card-img-top {
+            width: 100%; /* largeur de l'image à 100% de la carte */
+            height: 200px; /* hauteur fixe pour l'image */
+            object-fit: contain; /* pour afficher l'image entière sans la déformer */
+        }
+    </style>
+    <div class="container mt-4" style="padding-top: 3%;padding-bottom: 3%;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card product-card">
+                    <img class="card-img-top" [src]="product.image_url" alt="Image du produit">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.product_name }}</h5>
+                        <p class="card-text"><strong>Marque :</strong> {{ product.brands }}</p>
+                        <p class="card-text"><strong>Catégorie :</strong> {{ product.categories }}</p>
+                        <p class="card-text"><strong>Nom générique :</strong> {{ product.generic_name }}</p>
+                        <a href="#" class="btn btn-primary" (click)="returnAcceuil()">Retour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 

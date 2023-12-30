@@ -14,3 +14,10 @@ export interface Product {
   image_url: string; 
   generic_name: string;
  }
+
+ export interface ProductUnit {
+  code: string;
+  product: Product;
+  status: number;
+  status_verbose: string;
+}

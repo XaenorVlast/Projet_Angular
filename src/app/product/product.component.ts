@@ -11,9 +11,11 @@ import { Product } from '../models/product.models';
 })
 export class ProductComponent implements OnInit {
   @Input() product!: Product;
-
+  constructor(private router :Router) {}
   ngOnInit(): void {}
-
+  onViewFaceSnap() {
+    this.router.navigateByUrl(`${this.product.id}`);
+  }
 }
 
 
