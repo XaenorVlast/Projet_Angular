@@ -1,16 +1,10 @@
-body {
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
-}
-
 .fixed-content {
   background-color: #343a40;
   color: #ffffff;
   padding: 20px 0;
-  bottom: 0;
   width: 100%;
-  text-align: center; /* Center-align the content horizontally */
+  text-align: center;
+  margin-top: auto; /* Push the content to the bottom */
 }
 
 .fixed-content img {
@@ -22,18 +16,18 @@ body {
 .fixed-content p {
   margin-bottom: 10px;
   font-size: 1.35rem;
-  text-align: center; /* Center-align the text within the paragraph */
+  text-align: center;
 }
 
 .inline-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center; /* Center-align the list items */
+  text-align: center;
 }
 
 .inline-list li {
-  display: inline; /* Display list items inline */
+  display: inline;
   margin-right: 15px;
 }
 

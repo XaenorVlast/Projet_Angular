@@ -1,48 +1,78 @@
 body {
   font-family: 'Arial', sans-serif;
+  background-color: #f5f1ec;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
+  text-align: center;
+  padding: 40px;
 }
 
-.mt-4 {
-  margin-top: 4rem;
+.section-title {
+  font-size: 2.5rem;
+  color: #343a40;
 }
 
-.contributors-row {
-  justify-content: center;
-}
-
-.contributor-card {
+.contributors {
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contributor {
+  flex: 1 0 30%;
+  margin: 10px;
 }
 
 .contributor-img {
   width: 100%;
-  height: auto;
+  border-radius: 50%;
 }
 
 .contributor-name {
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 
-.join-community {
-  margin-top: 2rem;
+.join-community h3 {
+  margin-bottom: 10px;
 }
 
-.social-link {
-  font-size: 1.5rem;
-  margin: 0 0.5rem;
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.social-icons img {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.help-section p {
+  margin: 20px 0;
 }
 
 .emphasized-title {
-  color: #007bff;
+  font-size: 1.8rem;
+  color: #343a40;
 }
 
 .subheader {
-  color: #777;
+  font-size: 1.2rem;
+  color: #495057;
 }

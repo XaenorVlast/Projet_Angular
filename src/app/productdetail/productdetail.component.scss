@@ -1,5 +1,19 @@
 .product-card {
-    max-width: 300px; /* ou une autre taille fixe selon vos besoins */
+  max-width: 300px; /* ou une autre taille fixe selon vos besoins */
+  margin: auto; /* pour centrer la carte */
+}
+.card-img-top {
+  width: 100%; /* largeur de l'image à 100% de la carte */
+  height: 200px; /* hauteur fixe pour l'image */
+  object-fit: contain; /* pour afficher l'image entière sans la déformer */
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f1ec;
+  margin: 0;
+  padding: 0;
+}
+max-width: 300px; /* ou une autre taille fixe selon vos besoins */
     margin: auto; /* pour centrer la carte */
   }
   

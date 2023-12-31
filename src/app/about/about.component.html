@@ -1,61 +1,61 @@
 <body>
-  <div class="container text-center">
-    <h2 class="mt-4">About Us</h2>
+<div class="container text-center">
 
-    <!-- Row for Contributors -->
-    <div class="contributors-row row row-cols-1 row-cols-md-3 g-4 mt-4">
-        <!-- Contributor 1 -->
-        <div class="col">
-            <div class="card contributor-card">
-                <img src="/assets/clement.png" alt="Clément Charabot" class="card-img-top contributor-img">
-                <div class="card-body text-center">
-                    <h5 class="card-title contributor-name">Clément Charabot</h5>
-                </div>
-            </div>
-        </div>
+  <!-- Header Section -->
+  <h2 class="section-title mt-4">About Us</h2>
 
-        <!-- Contributor 2 -->
-        <div class="col">
-            <div class="card contributor-card">
-                <img src="/assets/maxence.png" alt="Maxence Mayoly" class="card-img-top contributor-img">
-                <div class="card-body text-center">
-                    <h5 class="card-title contributor-name">Maxence Mayoly</h5>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contributor 3 -->
-        <div class="col">
-            <div class="card contributor-card">
-                <img src="/assets/loick.png" alt="Loick Gomez" class="card-img-top contributor-img">
-                <div class="card-body text-center">
-                    <h5 class="card-title contributor-name">Loick Gomez</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Additional Content -->
-    <div class="join-community mt-4">
-      <h3>Join the community</h3>
-      <button class="btn btn-primary" href="https://world.openfoodfacts.org/code-of-conduct">Discover our Code of Conduct</button>
-      <button class="btn btn-primary" href="https://blog.openfoodfacts.org/en/newsletter-2">Subscribe to our newsletter</button>
-      <button class="btn btn-primary" href="https://forum.openfoodfacts.org/">Forum</button>
-  </div>
-  <img src="/assets/twitter.svg" href="https://twitter.com/openfoodfacts" alt="Twitter Icon" height="50px">
-  <img src="/assets/facebook.svg" href="https://www.facebook.com/OpenFoodFacts" alt="Facebook Icon"  height="50px">
-  <img src="/assets/instagram.svg" href="https://www.instagram.com/open.food.facts/" alt="Instagram Icon"  height="50px">
-  
-  <div class="row text-center mt-4">
-      <div class="col-md-12">
-          <h2 class="emphasized-title">We're here to help</h2>
-          <h5 class="subheader">We are available for any questions.</h5>
+  <!-- Contributors Section -->
+  <div class="contributors mt-4">
+      <!-- Contributor 1 -->
+      <div class="contributor">
+          <img src="/assets/clement.png" alt="Clément Charabot" class="rounded-circle">
+          <h5 class="contributor-name">Clément Charabot</h5>
       </div>
+
+      <!-- Contributor 2 -->
+      <div class="contributor">
+          <img src="/assets/maxence.png" alt="Maxence Mayoly" class="rounded-circle">
+          <h5 class="contributor-name">Maxence Mayoly</h5>
+      </div>
+
+      <!-- Contributor 3 -->
+      <div class="contributor">
+          <img src="/assets/loick.png" alt="Loick Gomez" class="rounded-circle">
+          <h5 class="contributor-name">Loick Gomez</h5>
+      </div>
+  </div>
+
+  <!-- Join Community Section -->
+  <div class="join-community mt-4">
+      <h3>Join the community</h3>
+      <div class="btn-container">
+          <button class="btn btn-primary" onclick="window.location.href='https://world.openfoodfacts.org/code-of-conduct'">Discover our Code of Conduct</button>
+          <button class="btn btn-primary" onclick="window.location.href='https://blog.openfoodfacts.org/en/newsletter-2'">Subscribe to our newsletter</button>
+          <button class="btn btn-primary" onclick="window.location.href='https://forum.openfoodfacts.org/'">Forum</button>
+      </div>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="social-icons mt-3">
+      <h3>Follow us on social media</h3>
+      <div class="social-container">
+          <img src="/assets/twitter.svg" alt="Twitter Icon" height="50px" class="social-link" onclick="window.location.href='https://twitter.com/openfoodfacts'">
+          <img src="/assets/facebook.svg" alt="Facebook Icon" height="50px" class="social-link" onclick="window.location.href='https://www.facebook.com/OpenFoodFacts'">
+          <img src="/assets/instagram.svg" alt="Instagram Icon" height="50px" class="social-link" onclick="window.location.href='https://www.instagram.com/open.food.facts/'">
+      </div>
+  </div>
+
+  <!-- Help Section -->
+  <div class="help-section text-center mt-4">
+      <h2 class="emphasized-title">We're here to help</h2>
+      <h5 class="subheader">We are available for any questions.</h5>
       <p>We'll do our best to guide you so that you can take your part in transforming the food system for your
           consumers and the planet.</p>
-      <button class="btn btn-success" href="https://blog.openfoodfacts.org/wp-content/uploads/2023/03/EN-Pro-Plateform-User-Guide.pdf">Read our quick start guide</button>
-      <button class="btn btn-info" href="producers@openfoodfacts.org.">Contact us at producers@openfoodfacts.org</button>
+      <div class="btn-container">
+          <button class="btn btn-success" onclick="window.location.href='https://blog.openfoodfacts.org/wp-content/uploads/2023/03/EN-Pro-Plateform-User-Guide.pdf'">Read our quick start guide</button>
+          <button class="btn btn-info" onclick="window.location.href='mailto:producers@openfoodfacts.org'">Contact us at producers@openfoodfacts.org</button>
+      </div>
   </div>
+
 </div>
 </body>
-

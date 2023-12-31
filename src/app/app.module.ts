@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule} from '@angular/common/http'
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule} from '@angular/router';
 
 /* Components */
@@ -18,6 +18,7 @@ import { ProductListComponent } from './productlist/productlist.component';
 import { ProducersComponent } from './producers/producers.component';
 import { ProductDetailComponent } from './productdetail/productdetail.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
+import { CountryComponent } from './country/country.component';
 
 @NgModule({
   declarations: [
@@ -29,16 +30,18 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
     HeaderComponent,
     ProducersComponent,
     ProductComponent,
+    ProductDetailComponent,
     ProductListComponent,
-    AcceuilComponent
-
+    AcceuilComponent,
+    CountryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

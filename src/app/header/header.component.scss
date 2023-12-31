@@ -22,3 +22,22 @@
 #page .navbar-toggler-icon {
   color: #000; /* Adjust the color of the navbar toggler icon */
 }
+
+.btn-get-app {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-get-app:hover {
+  background-color: #0056b3;
+}
