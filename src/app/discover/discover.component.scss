@@ -1,9 +1,13 @@
 body {
-  font-family: 'Arial', sans-serif; /* Change the font-family as needed */
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f1ec;
+  margin: 0;
+  padding: 0;
 }
 
+
 h2, h3, h4 {
-  font-family: 'Serif'; /* Change the font-family as needed */
+  font-family: 'Arial'; 
 }
 
 p {
@@ -12,7 +16,7 @@ p {
 }
 
 .card-container {
-  margin-bottom: 100px; /* Ajustez la valeur selon la hauteur de votre footer */
+  margin-bottom: 60px;
 }
 
 body {

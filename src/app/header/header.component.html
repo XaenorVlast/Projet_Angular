@@ -5,9 +5,10 @@
     </button>
 
     <div class="collapse navbar-collapse text-center">
-      <img id="logo" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg" alt="Open Food Facts logo">
-
       <ul class="navbar-nav mx-auto">
+        <a class="navbar-brand" routerLink="/">
+          <img id="logo" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg" alt="Open Food Facts logo" href="src/app/acceuil/">
+        </a>
         <!-- Onglet "About" avec un menu déroulant -->
         <li class="nav-item">
           <a class="nav-link" routerLink="About">About</a>
@@ -15,6 +16,10 @@
         <!-- Onglet "Products" avec un menu déroulant -->
         <li class="nav-item">
           <a class="nav-link" routerLink="Product">Products</a>
+        </li>
+        <!--Onglet "Country"-->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="Country">Country</a>
         </li>
 
         <!-- Onglet "Discover" -->
@@ -36,10 +41,14 @@
     <div class="ml-auto">
       <a data-mdb-ripple-init class="btn btn-white px-3" href="https://github.com/openfoodfacts" role="button">
         <div class="d-flex align-items-center">
-          <i class="fab fa-github mr-2"></i> <!-- Icône existante -->
-          <img src="/assets/github.png" alt="Github" style="width: 20px; height: 20px;">
+          <i class="fab fa-github mr-2"></i>
+          <img src="/assets/github.png" alt="Github" style="width: 40px; height: 40px;">
         </div>
       </a>
+    </div>
+
+    <div class="ml-auto">
+      <a class="btn-get-app" href="https://world.openfoodfacts.org/open-food-facts-mobile-app">Get the App</a>
     </div>
   </nav>
 </div>
