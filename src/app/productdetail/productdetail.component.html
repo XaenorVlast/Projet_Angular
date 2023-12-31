@@ -1,5 +1,6 @@
-<body>
+
     <div class="container mt-4" style="padding-top: 3%;padding-bottom: 3%;">
+        <!-- Début de la partie spécifiée -->
         <div class="row">
             <div class="col-md-12">
                 <div class="card product-card">
@@ -16,3 +17,69 @@
         </div>
     </div>
 </body>
+
+        <div>
+            <table class="nutrition-facts">
+                <tr>
+                    <th>Éléments nutritifs</th>
+                    <th>Par 100g/100ml</th>
+                    <th>Par portion ({{ product.serving_size }})</th>
+
+                </tr>
+                <tr>
+                    <td class="highlight">Énergie</td>
+                    <td>{{ product.energy_100g }} kJ ({{ product.energy_100g }} kcal)</td>
+                    <td>{{ product.energy_serving }} kJ ({{ product.energy_serving }} kcal)</td>
+
+                </tr>
+                <tr>
+                    <td class="highlight">Matières grasses</td>
+                    <td>{{ product.fat_100g }} g</td>
+                    <td>{{ product.fat_serving }} g</td>
+
+                </tr>
+                <tr>
+                    <td class="highlight">Acides gras saturés</td>
+                    <td>{{ product.saturated_fat_100g }} g</td>
+                    <td>{{ product.saturated_fat_serving }} g</td>
+
+                </tr>
+                <tr>
+                    <td class="highlight">Glucides</td>
+                    <td>{{ product.carbohydrates_100g }} g</td>
+                    <td>{{ product.carbohydrates_serving }} g</td>
+
+                </tr>
+                <tr>
+                    <td class="highlight">Sucres</td>
+                    <td>{{ product.sugars_100g }} g</td>
+                    <td>{{ product.sugars_serving }} g</td>
+
+                </tr>
+                <tr>
+                    <td class="highlight">Fibres alimentaires</td>
+                    <td>{{ product.fiber_100g }} g</td>
+                    <td>{{ product.fiber_serving }} g</td>
+
+                </tr>
+                <tr>
+                    <td class="highlight">Protéines</td>
+                    <td>{{ product.proteins_100g }} g</td>
+                    <td>{{ product.proteins_serving }} g</td>
+
+                </tr>
+                <tr>
+                    <td class="highlight">Sel</td>
+                    <td>{{ product.salt_100g }} g</td>
+                    <td>{{ product.salt_serving }} g</td>
+
+                </tr>
+                <tr>
+                    <td class="highlight">Estimation fruits, légumes et noix</td>
+                    <td>{{ product.fruits_vegetables_nuts_100g_estimate }} %</td>
+                    <td><!-- Pas de données pour la portion --></td>
+
+                </tr>
+            </table>
+        </div>
+    </div>

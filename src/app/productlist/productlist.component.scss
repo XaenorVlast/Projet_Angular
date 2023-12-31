@@ -80,5 +80,19 @@
     background-color: #f5f1ec;
     margin: 0;
     padding: 0;
+
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Full height of the viewport */
+    text-align: center;
+    font-size: 1.2rem; /* Taille de police modérée */
+  }
+  
+  .centered-content p {
+    margin: 0; /* Élimine l'espacement par défaut autour des paragraphes */
   }
   

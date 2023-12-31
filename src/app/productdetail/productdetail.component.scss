@@ -13,3 +13,59 @@ body {
   margin: 0;
   padding: 0;
 }
+max-width: 300px; /* ou une autre taille fixe selon vos besoins */
+    margin: auto; /* pour centrer la carte */
+  }
+  
+  .card-img-top {
+    height: 200px; /* hauteur fixe pour l'image */
+    object-fit: cover; /* pour s'assurer que l'image couvre l'espace sans être déformée */
+  }
+  .product-card {
+    max-width: 300px;
+    /* ou une autre taille fixe selon vos besoins */
+    margin: auto;
+    /* pour centrer la carte */
+    border: 1px solid #ddd;
+    /* bordure de la carte */
+    border-radius: 5px;
+    /* coins arrondis de la carte */
+}
+
+.card-img-top {
+    width: 100%;
+    /* largeur de l'image à 100% de la carte */
+    height: 200px;
+    /* hauteur fixe pour l'image */
+    object-fit: contain;
+    /* pour afficher l'image entière sans la déformer */
+}
+
+.nutrition-facts {
+    width: 100%;
+    /* largeur du tableau à 100% */
+    margin-top: 20px;
+    /* espace au-dessus du tableau */
+    border-collapse: collapse;
+    /* pour moins d'espace entre les bordures */
+}
+
+.nutrition-facts th,
+.nutrition-facts td {
+    border: 1px solid #ddd;
+    /* bordure autour de chaque cellule */
+    padding: 8px;
+    /* espace à l'intérieur de chaque cellule */
+}
+
+.nutrition-facts th {
+    background-color: #f2f2f2;
+    /* couleur de fond pour les en-têtes de tableau */
+    text-align: left;
+    /* alignement du texte à gauche pour les en-têtes */
+}
+
+.highlight {
+    font-weight: bold;
+    /* texte en gras pour mise en évidence */
+}
