@@ -16,15 +16,32 @@ export class ProductDetailComponent implements OnInit {
     @Input() product!: Product;
   nutriscore: any;
   ecoscore: any;
+  novagroup: any;
 
 
-ngOnInit(){
+ngOnInit() : void {
   const Id = +this.route.snapshot.params['id'];
   this.loadProductsUnit(Id);
   this.choisirImageNutriScore();
+  this.choisirImageEcoScore();
+  this.choisirImageNovaGroup();
 }
 
+choisirImageNovaGroup(){
+  if(this.product.nova_group === 1){
+    this.novagroup= 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/NOVA_group_1.svg/102px-NOVA_group_1.svg.png'
+  }
+  if(this.product.nova_group === 2){
+    this.novagroup= 'https://static.openfoodfacts.org/images/attributes/dist/nova-group-2.svg'
+  }
+  if(this.product.nova_group=== 3){
+    this.novagroup = "https://static.openfoodfacts.org/images/attributes/dist/nova-group-3.svg"
+  }
+  if(this.product.nova_group === 4){
+    this.novagroup = "https://static.openfoodfacts.org/images/attributes/dist/nova-group-4.svg"
+  }
 
+}
 
 choisirImageNutriScore() {
   if (this.product.nutriscore_tags[0] === 'a') {

@@ -15,6 +15,7 @@ export interface Product {
   generic_name: string;
   nutriscore_tags: string[]; 
   ecoscore_tags: string[]; 
+  nova_group: number;
   quantity: string;
   packaging: string;
   labels: string;
@@ -23,6 +24,11 @@ export interface Product {
   stores: string;
   editors_tags: string;
   nutriments:nutriments;
+  nutrient_levels_tags: string[];
+  ingredients_text_en: string;
+  image_ingredients_small_url: string;
+  image_nutrition_url: string;
+  origins_old: string;
 }
 
  export interface ProductUnit {
