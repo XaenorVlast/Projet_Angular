@@ -28,20 +28,25 @@
       </div>
     </div>
 
-    <div class="products-container row">
+    <div class="products-container row" *ngIf="products; else loading">
       <div class="col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let product of products">
         <app-product [product]="product"></app-product>
       </div>
     </div>
   </div>
 
-  <div class="button-container">
+  <div style="display: flex;justify-content: center;">
     <button (click)="ChangePageMoins()">Page Précédente</button>
     <button (click)="ChangePagePlus()">Page Suivante</button>
-  </div>
+    </div>
 
   <div class="info-container">
     <p>Numéro de page actuel : {{ currentPage }}</p>
   </div>
 </div>
 </body>
+<ng-template #loading>
+  <div class="centered-content" style="margin-bottom: 2%;margin-top: 4%;">
+    <p>Chargement des produits...</p>
+  </div>
+</ng-template>

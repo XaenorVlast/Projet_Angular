@@ -19,20 +19,26 @@ export interface Product {
   packaging: string;
   labels: string;
   countries: string;
-  ingredients_text: string;
-  ingredients_text_en: string;
-  image_ingredients_small_url: string;
-  allergens: string;
-  traces: string;
-  serving_size: string;
-  nutrition_grade_fr: string;
-  nutrient_levels: any; // Replace 'any' with a more specific type if possible
+  origin: string;
+  stores: string;
+  editors_tags: string;
+  nutriments:nutriments;
+}
+
+ export interface ProductUnit {
+  code: string;
+  product: Product;
+  status: number;
+  status_verbose: string;
+}
+
+export interface nutriments {
   energy_100g: number;
   energy_serving: number;
   fat_100g: number;
   fat_serving: number;
-  saturated_fat_100g: number; // Corrected the naming convention from saturated-fat_100g
-  saturated_fat_serving: number; // Corrected the naming convention from saturated-fat_serving
+  saturated_fat_100g: number; 
+  saturated_fat_serving: number; 
   carbohydrates_100g: number;
   carbohydrates_serving: number;
   sugars_100g: number;
@@ -44,15 +50,4 @@ export interface Product {
   salt_100g: number;
   salt_serving: number;
   fruits_vegetables_nuts_100g_estimate: number;
-  origin: string;
-  stores: string;
-  editors_tags: string;
-
-}
-
- export interface ProductUnit {
-  code: string;
-  product: Product;
-  status: number;
-  status_verbose: string;
 }
