@@ -20,6 +20,8 @@ export interface Product {
   labels: string;
   countries: string;
   ingredients_text: string;
+  ingredients_text_en: string;
+  image_ingredients_small_url: string;
   allergens: string;
   traces: string;
   serving_size: string;
@@ -42,6 +44,9 @@ export interface Product {
   salt_100g: number;
   salt_serving: number;
   fruits_vegetables_nuts_100g_estimate: number;
+  origin: string;
+  stores: string;
+  editors_tags: string;
 
 }
 

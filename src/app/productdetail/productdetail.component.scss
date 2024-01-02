@@ -1,71 +1,63 @@
-.product-card {
-  max-width: 300px; /* ou une autre taille fixe selon vos besoins */
-  margin: auto; /* pour centrer la carte */
-}
-.card-img-top {
-  width: 100%; /* largeur de l'image à 100% de la carte */
-  height: 200px; /* hauteur fixe pour l'image */
-  object-fit: contain; /* pour afficher l'image entière sans la déformer */
-}
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f5f1ec;
-  margin: 0;
-  padding: 0;
 }
-max-width: 300px; /* ou une autre taille fixe selon vos besoins */
-    margin: auto; /* pour centrer la carte */
-  }
-  
-  .card-img-top {
-    height: 200px; /* hauteur fixe pour l'image */
-    object-fit: cover; /* pour s'assurer que l'image couvre l'espace sans être déformée */
-  }
-  .product-card {
-    max-width: 300px;
-    /* ou une autre taille fixe selon vos besoins */
-    margin: auto;
-    /* pour centrer la carte */
-    border: 1px solid #ddd;
-    /* bordure de la carte */
-    border-radius: 5px;
-    /* coins arrondis de la carte */
+
+.product-container,
+.preferences-container,
+.health-container,
+.nutrition-container {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.product-card h2 {
+  text-align: center;
+}
+
+.product-card h2:hover {
+  color: #ff0000;
+  cursor: pointer;
 }
 
 .card-img-top {
-    width: 100%;
-    /* largeur de l'image à 100% de la carte */
-    height: 200px;
-    /* hauteur fixe pour l'image */
-    object-fit: contain;
-    /* pour afficher l'image entière sans la déformer */
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
 }
 
 .nutrition-facts {
-    width: 100%;
-    /* largeur du tableau à 100% */
-    margin-top: 20px;
-    /* espace au-dessus du tableau */
-    border-collapse: collapse;
-    /* pour moins d'espace entre les bordures */
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
 }
 
 .nutrition-facts th,
 .nutrition-facts td {
-    border: 1px solid #ddd;
-    /* bordure autour de chaque cellule */
-    padding: 8px;
-    /* espace à l'intérieur de chaque cellule */
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 .nutrition-facts th {
-    background-color: #f2f2f2;
-    /* couleur de fond pour les en-têtes de tableau */
-    text-align: left;
-    /* alignement du texte à gauche pour les en-têtes */
+  background-color: #f2f2f2;
+  width: 120px;
+}
+
+.product-card,
+.product-nutritionfacts {
+  max-width: 800px;
+  margin: auto;
 }
 
 .highlight {
-    font-weight: bold;
-    /* texte en gras pour mise en évidence */
+  font-weight: bold;
+}
+
+.nutrient-column {
+  width: 80px;
+}
+
+.nutrition-facts td,
+.nutrition-facts th {
+  padding: 5px;
 }
