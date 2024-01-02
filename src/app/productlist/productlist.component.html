@@ -12,7 +12,6 @@
         </select>
       </div>
 
-
       <!-- Barre de recherche déroulante pour les options d'exploration -->
       <div class="input-group mb-3">
         <select class="form-select" [(ngModel)]="explorationOption">
@@ -33,11 +32,6 @@
       <div class="col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let product of products">
         <app-product [product]="product"></app-product>
       </div>
-
-<div class="container mt-4" style="padding-bottom: 2%;padding-top: 5%;" *ngIf="products; else loading">
-  <div class="row">
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let product of products">
-      <app-product [product]="product"></app-product> 
     </div>
   </div>
 
@@ -51,11 +45,3 @@
   </div>
 </div>
 </body>
-<p>Numéro de page actuel : {{ currentPage }}</p>
-</div>
-
-<ng-template #loading>
-  <div class="centered-content">
-    <p>Chargement des produits...</p>
-  </div>
-</ng-template>

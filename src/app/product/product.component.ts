@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Product } from '../models/product.models';
 
@@ -11,13 +11,14 @@ import { Product } from '../models/product.models';
 })
 export class ProductComponent implements OnInit {
   @Input() product!: Product;
-  nutriscore!: string;
-  ecoscore!: string;
-  constructor(private router: Router) { }
+nutriscore: any;
+ecoscore: any;
+  constructor(private router :Router) {}
   ngOnInit(): void {
     this.choisirImageNutriScore();
     this.choisirImageEcoScore();
   }
+
   choisirProduit() {
     this.router.navigateByUrl(`Product/${this.product.id}`);
   }
@@ -39,6 +40,7 @@ export class ProductComponent implements OnInit {
       this.nutriscore = 'https://static.openfoodfacts.org/images/attributes/dist/nutriscore-e.svg'
     }
   }
+
   choisirImageEcoScore() {
     if (this.product.ecoscore_tags[0] === "not-applicable") {
       this.ecoscore = 'https://static.openfoodfacts.org/images/attributes/dist/ecoscore-not-applicable.svg'
@@ -60,5 +62,3 @@ export class ProductComponent implements OnInit {
     }
   }
 }
-
-

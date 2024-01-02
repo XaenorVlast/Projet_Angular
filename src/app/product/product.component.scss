@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 220px; /* Largeur fixe des cartes */
+  width: 320px; /* Largeur fixe des cartes */
   margin: 5px; /* Ajustez selon l'espacement souhaité entre les cartes */
   border: 1px solid #ddd; /* Bordure pour la définition */
   border-radius: 10px; /* Bords arrondis */
@@ -22,7 +22,7 @@
   width: 100%; /* L'image couvre toute la largeur de son conteneur */
   height: 180px; /* Hauteur fixe pour toutes les images */
   object-fit: contain; /* L'image s'adapte à la hauteur tout en restant entièrement visible */
-  background-color: white; /* Arrière-plan blanc pour les images qui ne remplissent pas tout l'espace */
+   /* Arrière-plan blanc pour les images qui ne remplissent pas tout l'espace */
 }
 
 .product-info {
@@ -53,7 +53,7 @@
 }
 
 .product-brand {
-  font-size: 0.9em; /* Taille de la marque */
+  font-size: 1em; /* Taille de la marque */
 }
 
 h2{
