@@ -29,104 +29,61 @@
             </div>
         </div>
     </div>
-    <div class="container mt-4" style="padding-top: 3%; padding-bottom: 3%;">
-        <div class="row">
-            <div class="col-12">
-                <div class="card product-health">
-                    <h1>Preferences</h1>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container mt-4" style="padding-top: 3%; padding-bottom: 3%;">
-        <div class="row">
-            <div class="col-12">
-                <div class="card product-health">
-                    <h1>Health</h1>
-                    <br>
-                    <div class="row g-0" style="align-items: stretch;">
-                        <div class="col-md-8"> <!-- Increased the size of the text column to make space for the image -->
-                            <h2>Ingredients</h2>
-                            <br><br>
-                            <h2>{{product.ingredients_text_en}}</h2>
-                        </div>
-                        <div class="col-md-4">
-                            <img class="card-img-top" [src]="product.image_ingredients_small_url" alt="Image du produit" style="height: 100%; width: 100%;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="container mt-4" style="padding-top: 3%; padding-bottom: 3%;">
         <div class="row">
             <div class="card product-nutritionfacts">
-                <h2> Nutrition </h2>
-                <br>
+
                 <h3> Nutrition facts</h3>
-        <table class="nutrition-facts">
-            <tr>
-                <th class="highlight nutrient-column">Éléments nutritifs</th>
-                <th class="highlight nutrient-column">Par 100g/100ml</th>
-                <th class="highlight nutrient-column">Par portion ({{ product.serving_size }})</th>
-
-            </tr>
-            <tr>
-                <td class="highlight nutrient-column">Énergie</td>
-                <td class="highlight nutrient-column">{{ product.energy_100g }} kJ ({{ product.energy_100g }} kcal)</td>
-                <td class="highlight nutrient-column">{{ product.energy_serving }} kJ ({{ product.energy_serving }} kcal)</td>
-
-            </tr>
-            <tr>
-                <td class="highlight nutrient-column">Matières grasses</td>
-                <td class="highlight nutrient-column">{{ product.fat_100g }} g</td>
-                <td class="highlight nutrient-column">{{ product.fat_serving }} g</td>
-
-            </tr>
-            <tr>
-                <td class="highlight nutrient-column">Acides gras saturés</td>
-                <td class="highlight nutrient-column">{{ product.saturated_fat_100g }} g</td>
-                <td class="highlight nutrient-column">{{ product.saturated_fat_serving }} g</td>
-
-            </tr>
-            <tr>
-                <td class="highlight nutrient-column">Glucides</td>
-                <td class="highlight nutrient-column">{{ product.carbohydrates_100g }} g</td>
-                <td class="highlight nutrient-column">{{ product.carbohydrates_serving }} g</td>
-
-            </tr>
-            <tr>
-                <td class="highlight nutrient-column">Sucres</td>
-                <td class="highlight nutrient-column">{{ product.sugars_100g }} g</td>
-                <td class="highlight nutrient-column" >{{ product.sugars_serving }} g</td>
-
-            </tr>
-            <tr>
-                <td class="highlight nutrient-column">Fibres alimentaires</td>
-                <td class="highlight nutrient-column">{{ product.fiber_100g }} g</td>
-                <td class="highlight nutrient-column">{{ product.fiber_serving }} g</td>
-
-            </tr>
-            <tr>
-                <td class="highlight nutrient-column">Protéines</td>
-                <td class="highlight nutrient-column">{{ product.proteins_100g }} g</td>
-                <td class="highlight nutrient-column">{{ product.proteins_serving }} g</td>
-
-            </tr>
-            <tr>
-                <td class="highlight nutrient-column">Sel</td>
-                <td class="highlight nutrient-column">{{ product.salt_100g }} g</td>
-                <td class="highlight nutrient-column">{{ product.salt_serving }} g</td>
-
-            </tr>
-            <tr>
-                <td class="highlight nutrient-column">Estimation fruits, légumes et noix</td>
-                <td class="highlight nutrient-column">{{ product.fruits_vegetables_nuts_100g_estimate }} %</td>
-                <td class="highlight nutrient-column"><!-- Pas de données pour la portion --></td>
-
-            </tr>
-        </table>
+                <table class="nutrition-facts">
+                    <tr>
+                        <th class="highlight nutrient-column">Éléments nutritifs</th>
+                        <th class="highlight nutrient-column">Par 100g/100ml</th>
+                        <th class="highlight nutrient-column">Par portion </th>
+                    </tr>
+                    <tr>
+                        <td class="highlight nutrient-column">Énergie</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.energy_100g }} kJ ({{ product.nutriments.energy_100g }} kcal)</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.energy_serving }} kJ ({{ product.nutriments.energy_serving }} kcal)</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight nutrient-column">Matières grasses</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.fat_100g }} g</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.fat_serving }} g</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight nutrient-column">Acides gras saturés</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.saturated_fat_100g }} g</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.saturated_fat_serving }} g</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight nutrient-column">Glucides</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.carbohydrates_100g }} g</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.carbohydrates_serving }} g</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight nutrient-column">Sucres</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.sugars_100g }} g</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.sugars_serving }} g</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight nutrient-column">Fibres alimentaires</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.fiber_100g }} g</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.fiber_serving }} g</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight nutrient-column">Protéines</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.proteins_100g }} g</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.proteins_serving }} g</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight nutrient-column">Sel</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.salt_100g }} g</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.salt_serving }} g</td>
+                    </tr>
+         
+                </table>
+                
     </div>
 </div>
 </div>

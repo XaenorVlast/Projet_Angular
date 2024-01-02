@@ -19,8 +19,8 @@ export class ProductDetailComponent implements OnInit {
 
 
 ngOnInit(){
-  const faceSnapId = +this.route.snapshot.params['id'];
-  this.loadProductsUnit(faceSnapId);
+  const Id = +this.route.snapshot.params['id'];
+  this.loadProductsUnit(Id);
   this.choisirImageNutriScore();
 }
 
@@ -66,8 +66,8 @@ choisirImageEcoScore() {
 }
 
 
-loadProductsUnit(faceSnapId:number): void {
-  this.productService.GetProductById(faceSnapId).subscribe(response => {
+loadProductsUnit(Id:number): void {
+  this.productService.GetProductById(Id).subscribe(response => {
     this.product = response.product;
   });
 }

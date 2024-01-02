@@ -14,8 +14,8 @@ export class ProductService {
         const url = `https://world.openfoodfacts.org/cgi/search.pl?search_simple=1&action=process&json=1&page_size=${pageSize}&page=${page}`;
         return this.http.get<ProductResponse>(url);
 }
-GetProductById(faceSnapId: number): Observable<ProductUnit> {
-    return this.http.get<ProductUnit>(`https://world.openfoodfacts.org/api/v0/product/${faceSnapId}.json`);
+GetProductById(Id: number): Observable<ProductUnit> {
+    return this.http.get<ProductUnit>(`https://world.openfoodfacts.org/api/v0/product/${Id}.json`);
 }
 
 }
