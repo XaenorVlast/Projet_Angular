@@ -3,8 +3,8 @@
     <div class="container mt-4" style="padding-top: 3%; padding-bottom: 3%;">
         <div class="row">
             <div class="col-md-12">                
-                <div class="card product-card">
-                <h2>Product</h2>
+                <div class="card product-card w-100 h-100">
+                <h2 class="gras">Product</h2>
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img class="card-img-top" [src]="product.image_url" alt="Image du produit">
@@ -12,6 +12,7 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title" style="color: red">{{ product.product_name }}</h5>
+                                <p class="card-text"><strong>Barcode:</strong>{{product.id}}</p>
                                 <p class="card-text"><strong>Marque :</strong> {{ product.brands }}</p>
                                 <p class="card-text"><strong>Catégories :</strong> {{ product.categories }}</p>
                                 <p class="card-text"><strong>Nom générique :</strong> {{ product.generic_name }}</p>
@@ -29,43 +30,34 @@
             </div>
         </div>
     </div>
-
-    <!-- Preferences -->
-    <div class="container mt-4" style="padding-top: 3%; padding-bottom: 3%">
-        <div class="row">
-            <div class="card product-preferences">
-                <h3> Preferences</h3>
-                <img [src]="novagroup" alt="novagroup" class="product-image" style="height: 50px;">
-                <img [src]="nutriscore" alt="nutriscore" class="product-image" style="height: 50px;">
-                <img [src]="ecoscore" alt="ecoscore" class="product-image" style="height: 50px;">
-            </div>
-        </div>
-    </div>
     
     <!-- Health -->
     <div class="container mt-4" style="padding-top: 3%; padding-bottom: 3%;">
         <div class="row">
             <div class="col-12">
-                <div class="card product-health">
-                    <h1>Health</h1>
+                <div class="card product-health w-100 h-100">
+                    <h2 class="gras">Health</h2>
                     <br>
                     <div class="row g-0">
-                        <div class="col-md-8"> <!-- Increased the size of the text column to make space for the image -->
-                            <h2>Ingredients</h2>
-                            <br><br>
-                            <h4>{{product.ingredients_text_en}}</h4>
-                            <br><br>
-                            <h4>Food Processing</h4>
-                            <img class="card-img-top" [src]="novagroup" alt="novagroup" style="height: 100%; width: 100%;">
+                        <div class="col-md-8">
+                            <h3 style="color: green;">Ingredients</h3>
+                            <img src="https://static.openfoodfacts.org/images/icons/dist/ingredients.svg" style="height: 50px;">
+                            <h4 style="font-family: serif">{{product.ingredients_text_en}}</h4>
+                            <h4 class="souligner">Ingredient analysis</h4>
+                            <div class="col-md-4 text-end">
+                                <img class="card-img-top"[src]="product.image_ingredients_url" style="height: 200px;">
+                            </div>
+                            <h4 style="color: red" class="souligner">Food Processing</h4>
                             <br>
-                            <h4>Ingredient analysis</h4>
                             <br>
                             <br>
                             <h3> Nutrition</h3>
-                            <p>{{product.nutrient_levels_tags[0]}}</p>
-                            <p>{{product.nutrient_levels_tags[1]}}</p>
-                            <p>{{product.nutrient_levels_tags[2]}}</p>
-                            <h3> Nutrition facts</h3>
+                            <p>Fat in {{product.nutrient_levels.fat}} quantity</p>
+                            <p>Saturated fat in {{product.nutrient_levels.saturated_fat}} quantity</p>
+                            <p>Sugars in {{product.nutrient_levels.sugars}} quantity</p>
+                            <p>Salt in {{product.nutrient_levels.salt}} quantity</p>
+                            <br>
+                            <img src="https://static.openfoodfacts.org/images/icons/dist/scale-balance.svg" style="height: 50px;"><h3>Nutrition facts </h3>
                     <table class="nutrition-facts">
                     <tr>
                         <th class="highlight nutrient-column">Éléments nutritifs</th>
@@ -84,7 +76,7 @@
                     </tr>
                     <tr>
                         <td class="highlight nutrient-column">Acides gras saturés</td>
-                        <td class="highlight nutrient-column">{{ product.nutriments.saturated_fat_100g }} g</td>
+                        <td class="highlight nutrient-column">{{ product.nutriments.saturated_fat_100g}} g</td>
                         <td class="highlight nutrient-column">{{ product.nutriments.saturated_fat_serving }} g</td>
                     </tr>
                     <tr>
@@ -112,7 +104,6 @@
                         <td class="highlight nutrient-column">{{ product.nutriments.salt_100g }} g</td>
                         <td class="highlight nutrient-column">{{ product.nutriments.salt_serving }} g</td>
                     </tr>
-         
                 </table>
                         </div>
                     </div>
@@ -124,14 +115,14 @@
     <!-- Environment -->
     <div class="container mt-4" style="padding-top: 3%; padding-bottom: 3%">
         <div class="row">
-            <div class="card product-environment">
-                <h3> Preferences</h3>
-                <img [src]="ecoscore" alt="ecoscore" class="product-image" style="height: 50px;">
-                <h4> Packaging </h4>
+            <div class="card product-environment w-100 h-100">
+                <h2 class="gras"> Environment </h2>
                 <br>
-                <h5> Packaging parts</h5>
+                <h4 class="souligner"> Packaging </h4>
                 <br>
-                <h5> Packaging materials</h5>
+                <h5 style="color: orange"> Packaging parts</h5>
+                <br>
+                <h5 style="color: orange"> Packaging materials</h5>
                 <br>
                 <table class="nutrition-facts">
                     <tr>
@@ -146,7 +137,7 @@
                     </tr> 
                 </table>
                 <br>
-                <h4> Transportation</h4>
+                <h4 class="souligner"> Transportation</h4>
                 <br>
                 <table class="nutrition-facts">
                     <tr>

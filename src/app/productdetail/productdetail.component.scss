@@ -2,12 +2,17 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+
 .product-container,
 .preferences-container,
 .health-container,
 .nutrition-container {
   padding-top: 3%;
   padding-bottom: 3%;
+}
+
+.product-health h2{
+  text-align: center;
 }
 
 .product-card h2 {
@@ -42,13 +47,21 @@ body {
   text-align: left;
 }
 
+.gras{
+  font-weight: bold;
+}
+
+.souligner{
+  text-decoration: underline;
+}
 .nutrition-facts th {
   background-color: #f2f2f2;
   width: 120px;
 }
 
-.product-card,
-.product-nutritionfacts {
+.product-card, 
+.product-health, 
+.product-environment {
   max-width: 800px;
   margin: auto;
 }

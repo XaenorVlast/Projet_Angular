@@ -7,28 +7,30 @@ export interface ProductResponse {
 }
 
 export interface Product {
+packaging: any;
   id: string;
   product_name: string;
   brands: string;
   categories: string;
   image_url: string; 
+  image_ingredients_url: string;
   generic_name: string;
   nutriscore_tags: string[]; 
   ecoscore_tags: string[]; 
-  nova_group: number;
+  nova_groups_tags: string;
   quantity: string;
-  packaging: string;
   labels: string;
   countries: string;
   origin: string;
   stores: string;
   editors_tags: string;
   nutriments:nutriments;
-  nutrient_levels_tags: string[];
   ingredients_text_en: string;
   image_ingredients_small_url: string;
   image_nutrition_url: string;
   origins_old: string;
+  nutrient_levels: nutrientlevels;
+  nutriscore_grade: string;
 }
 
  export interface ProductUnit {
@@ -38,13 +40,20 @@ export interface Product {
   status_verbose: string;
 }
 
+export interface nutrientlevels{
+  fat: string;
+  salt: string;
+  saturated_fat: string;
+  sugars: string;
+}
+
 export interface nutriments {
   energy_100g: number;
   energy_serving: number;
   fat_100g: number;
   fat_serving: number;
   saturated_fat_100g: number; 
-  saturated_fat_serving: number; 
+  saturated_fat_serving: number;
   carbohydrates_100g: number;
   carbohydrates_serving: number;
   sugars_100g: number;
