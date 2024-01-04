@@ -2,35 +2,69 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-
-.product-container,
-.preferences-container,
-.health-container,
-.nutrition-container {
-  padding-top: 3%;
-  padding-bottom: 3%;
+.card-section {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.product-health h2{
+.product-card{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 100%; /* Adjust the width as needed */
+  max-height: 1200px;
+  max-width: 1200px;
+}
+
+.product-health{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+}
+h2 {
+  font-weight: bold;
   text-align: center;
 }
 
-.product-card h2 {
-  text-align: center;
+.gras {
+  font-weight: bold;
 }
 
-.product-image{
-  height: 50px;
+.souligner {
+  text-decoration: underline;
 }
 
-.product-card h2:hover {
-  color: #ff0000;
+.nova-group-section {
   cursor: pointer;
+}
+
+.nova-group-content {
+  display: none;
+}
+
+.nova-group-content.active {
+  display: block;
+}
+
+.invisible-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  /* Vous pouvez ajouter d'autres styles personnalisés si nécessaire */
 }
 
 .card-img-top {
   width: 100%;
-  height: 500px;
+  height: 400px;
+  max-height: 800px; /* Adjust the height as needed */
   object-fit: contain;
 }
 
@@ -47,23 +81,9 @@ body {
   text-align: left;
 }
 
-.gras{
-  font-weight: bold;
-}
-
-.souligner{
-  text-decoration: underline;
-}
 .nutrition-facts th {
   background-color: #f2f2f2;
   width: 120px;
-}
-
-.product-card, 
-.product-health, 
-.product-environment {
-  max-width: 800px;
-  margin: auto;
 }
 
 .highlight {
@@ -72,9 +92,4 @@ body {
 
 .nutrient-column {
   width: 80px;
-}
-
-.nutrition-facts td,
-.nutrition-facts th {
-  padding: 5px;
 }

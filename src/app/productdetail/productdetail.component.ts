@@ -11,12 +11,17 @@ import { Product} from '../models/product.models';
 export class ProductDetailComponent implements OnInit {
 
 
-  constructor(private productService: ProductService,
-    private route: ActivatedRoute, private router : Router) {}
+  constructor(private productService: ProductService, private route: ActivatedRoute, private router : Router) {}
+
     @Input() product!: Product;
     nutrientlevel: any;
     imagenutrientlevel: any;
     nutriscore: any;
+    novagroup: any;
+    ecoscore: any;
+    isNovaGroupVisible = false;
+    isNutriscoreVisible = false;
+
 
 
     ngOnInit(): void {
@@ -26,20 +31,20 @@ export class ProductDetailComponent implements OnInit {
       this.choisirNutrientSaltLevel();
       this.choisirNutrientSaturatedFatLevel();
       this.choisirNutrientSugarLevel();
-    
+      this.choisirImageNovaGroup();
     }
 
-choisirNutrientFatLevel() {
-  if (this.product.nutrient_levels.fat === 'low') {
-    this.nutrientlevel = "low";
-  }
-  if (this.product.nutrient_levels.fat === 'moderate') {
-    this.nutrientlevel = "moderate";
-  }
-  if (this.product.nutrient_levels.fat === 'high') {
-    this.nutrientlevel = "high";
-  }
-}
+    choisirNutrientFatLevel() {
+      if (this.product.nutrient_levels.fat === 'low') {
+        this.nutrientlevel = "low";
+      }
+      if (this.product.nutrient_levels.fat === 'moderate') {
+        this.nutrientlevel = "moderate";
+      }
+      if (this.product.nutrient_levels.fat === 'high') {
+        this.nutrientlevel = "high";
+      }
+    }
 
 
 choisirNutrientSaturatedFatLevel() {
@@ -78,6 +83,22 @@ choisirNutrientSaltLevel() {
   }
 }
 
+choisirImageNovaGroup() {
+  if (this.product.nova_groups_tags[0] === 'en:1-unprocessed-or-minimally-processed-foods') {
+    this.novagroup = 'https://static.openfoodfacts.org/images/attributes/dist/nova-group-1.svg'
+  }
+  if (this.product.nova_groups_tags[0] === 'en:2-processed-culinary-ingredients') {
+    this.novagroup = 'https://static.openfoodfacts.org/images/attributes/dist/nova-group-2.svg'
+  }
+  if (this.product.nova_groups_tags[0] === 'en:3-processed-foods') {
+    this.novagroup = 'https://static.openfoodfacts.org/images/attributes/dist/nova-group-3.svg'
+  }
+  if (this.product.nova_groups_tags[0] === 'en:4-ultra-processed-food-and-drink-products') {
+    this.novagroup = 'https://static.openfoodfacts.org/images/attributes/dist/nova-group-4.svg'
+  }
+}
+
+
 loadProductsUnit(Id:number): void {
   this.productService.GetProductById(Id).subscribe(response => {
     this.product = response.product;
@@ -86,4 +107,15 @@ loadProductsUnit(Id:number): void {
 returnAcceuil() {
   this.router.navigateByUrl(`/Product`);
 }
+
+toggleNovaGroup() {
+  this.isNovaGroupVisible = !this.isNovaGroupVisible;
+}
+
+toggleNutriscore() {
+  this.isNutriscoreVisible = !this.isNutriscoreVisible;
+}
+
+  
+  
 }
