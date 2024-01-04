@@ -13,6 +13,8 @@ export class ProductComponent implements OnInit {
   @Input() product!: Product;
 nutriscore: any;
 ecoscore: any;
+novagroup: any;
+
   constructor(private router :Router) {}
   ngOnInit(): void {
     this.choisirImageNutriScore();
