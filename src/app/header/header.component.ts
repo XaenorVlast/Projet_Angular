@@ -22,13 +22,7 @@ throw new Error('Method not implemented.');
 
   isNavbarOpen = false;
 
-  // Liste des pays
-  countries = [
-    { label: 'Country 1', link: '/country/1' },
-    { label: 'Country 2', link: '/country/2' },
-    // Ajoute d'autres pays selon tes besoins
-  ];
-
+  // Liste des pays 
   toggleNavbar() {
     this.isNavbarOpen = !this.isNavbarOpen;
   }

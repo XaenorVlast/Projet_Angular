@@ -1,52 +1,30 @@
-<body><div class="main-container">
-  <div class="container mt-4" style="padding-bottom: 2%; padding-top: 5%;">
-    <div class="search-container">
-      <!-- Barre de recherche déroulante pour les options de tri -->
-      <div class="input-group mb-3">
-        <select class="form-select" [(ngModel)]="sortingOption">
-          <option value="mostScanned">Most scanned products</option>
-          <option value="bestNutriScore">Products with the Best NutriScore</option>
-          <option value="bestEcoScore">Products with the Best Eco-Score</option>
-          <option value="recentlyAdded">Recently added products</option>
-          <option value="recentlyModified">Recently modified products</option>
-        </select>
-      </div>
+<!-- Auteurs du code : Maxence MAYOLY, Loick GOMEZ, Clément CHARABOT, date : 7 janvier 2024 --->
 
-      <!-- Barre de recherche déroulante pour les options d'exploration -->
-      <div class="input-group mb-3">
-        <select class="form-select" [(ngModel)]="explorationOption">
-          <option value="exploreProducts">Explore products by..</option>
-          <option value="countries">Countries</option>
-          <option value="nutritionGrades">Nutrition grades</option>
-          <option value="novaGroups">NOVA Groups</option>
-          <option value="ecoScore">Eco-Score</option>
-          <option value="categories">Categories</option>
-          <option value="labels">Labels</option>
-          <option value="packaging">Packaging</option>
-          <option value="languages">Languages</option>
-        </select>
-      </div>
-    </div>
-
+<body>
+  <br>
+  <div class="main-container">
     <div class="products-container row" *ngIf="products; else loading">
       <div class="col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let product of products">
         <app-product [product]="product"></app-product>
       </div>
     </div>
   </div>
-
-  <div style="display: flex;justify-content: center;">
+  
+  <div style="display: flex; justify-content: center;">
     <button (click)="ChangePageMoins()">Page Précédente</button>
     <button (click)="ChangePagePlus()">Page Suivante</button>
-    </div>
-
-  <div class="info-container">
+  </div>
+  
+  <div class="info-container" style="text-align: center; margin-top: 10px;">
     <p>Numéro de page actuel : {{ currentPage }}</p>
   </div>
-</div>
-</body>
-<ng-template #loading>
-  <div class="centered-content" style="margin-bottom: 2%;margin-top: 4%;">
-    <p>Chargement des produits...</p>
-  </div>
-</ng-template>
+  
+  <ng-template #loading>
+    <div class="centered-content" style="margin-bottom: 2%; margin-top: 4%;">
+      <p>Chargement des produits...</p>
+    </div>
+  </ng-template>
+  
+  <!-- Ajoutez vos scripts ou liens vers des fichiers JavaScript ici si nécessaire -->
+  
+  </body>

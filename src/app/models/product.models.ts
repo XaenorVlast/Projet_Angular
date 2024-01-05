@@ -7,7 +7,7 @@ export interface ProductResponse {
 }
 
 export interface Product {
-packaging: any;
+  packaging: string;
   id: string;
   product_name: string;
   brands: string;
@@ -18,6 +18,7 @@ packaging: any;
   nutriscore_tags: string[]; 
   ecoscore_tags: string[]; 
   nova_groups_tags: string[];
+  ecoscore_data: EcoScoreData;
   quantity: string;
   labels: string;
   countries: string;
@@ -34,6 +35,34 @@ packaging: any;
   nutriscore_grade: string;
   nutriscore_data: NutriScoreData;
   serving_size: string;
+  ingredients_analysis_tags: string[];
+  adjustments: Adjustments;
+  packagings: Packaging;
+  packaging_materials: PackagingMaterials;
+  packagings_materials_main: string;
+  packaging_old_before_taxonomization: string;
+}
+
+export interface PackagingMaterials{
+  "all":{
+    weight: number;
+    weight_100g: number;
+    weight_percent: number; 
+  }
+  packagings_materials_main: {
+    weight: number;
+    weight_100g: number;
+    weight_percent: number; 
+  }
+  "unknown": {
+    weight: number;
+    weight_100g: number;
+    weight_percent: number; 
+  }
+}
+
+export interface EcoScoreData{
+  adjustments: Adjustments;
 }
 
  export interface ProductUnit {
@@ -48,6 +77,26 @@ export interface nutrientlevels{
   salt: string;
   saturated_fat: string;
   sugars: string;
+}
+
+export interface Packaging{
+  non_recyclable_and_non_biodegradable_materials: number;
+}
+
+export interface Adjustments{
+  packaging: any;
+  "packagings": {
+    ecoscore_material_score: number;
+    ecoscore_shape_ratio: number;
+    material: string;
+    material_shape : string;
+    number_of_units: number;
+    quantity_per_unit: string;
+    quantity_per_unit_unit: string;
+    quantity_per_unit_value: number;
+    shape: string;
+    weight_measured: number;
+  }
 }
 
 export interface nutriments {

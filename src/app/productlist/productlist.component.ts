@@ -8,6 +8,13 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./productlist.component.scss'],
 })
 export class ProductListComponent implements OnInit {
+toggleNutriscore() {
+throw new Error('Method not implemented.');
+}
+searchProducts() {
+throw new Error('Method not implemented.');
+}
+
   products!: Product[];
   filteredProducts: Product[] = [];
   currentPage!: number;
@@ -44,5 +51,21 @@ export class ProductListComponent implements OnInit {
     this.currentPage--;
     this.loadProducts();
   }
+
+  // Nouvelle méthode de filtrage
+  filterProducts(): void {
+    this.filteredProducts = this.filterProductsByOption(this.products, this.explorationOption);
+  }
+
+  filterProductsByOption(products: Product[], option: string): Product[] {
+    switch (option) {
+      case 'exploreProducts':
+        return products;
+      default:
+        return products; 
+    }
+  }
+
+  
 
 }

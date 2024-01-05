@@ -10,7 +10,6 @@ import { Product} from '../models/product.models';
 })
 export class ProductDetailComponent implements OnInit {
 
-
   constructor(private productService: ProductService, private route: ActivatedRoute, private router : Router) {}
 
     @Input() product!: Product;
@@ -21,8 +20,11 @@ export class ProductDetailComponent implements OnInit {
     ecoscore: any;
     isNovaGroupVisible = false;
     isNutriscoreVisible = false;
-
-
+    isingredientanalysispalmoil = false;
+    isingredientanalysisvegan = false;
+    isingredientanalysisvegetarian = false;
+    isPackagingParts = false;
+    isingredientanalysis = false;
 
     ngOnInit(): void {
       const Id = +this.route.snapshot.params['id'];
@@ -116,6 +118,21 @@ toggleNutriscore() {
   this.isNutriscoreVisible = !this.isNutriscoreVisible;
 }
 
-  
+toggleingredientanalysispalmoil() {
+  this.isingredientanalysispalmoil = !this.isingredientanalysispalmoil;
+}
+
+toggleingredientanalysisvegan() {
+  this.isingredientanalysisvegan = !this.isingredientanalysisvegan;
+}
+
+toggleingredientanalysisvegetarian() {
+  this.isingredientanalysisvegetarian = !this.isingredientanalysisvegetarian;
+}
+
+togglePackagingParts(){
+  this.isPackagingParts = !this.isPackagingParts;
+}
+ 
   
 }
