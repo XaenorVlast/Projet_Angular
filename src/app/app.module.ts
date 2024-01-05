@@ -33,7 +33,7 @@ import { CountryComponent } from './country/country.component';
     ProductDetailComponent,
     ProductListComponent,
     AcceuilComponent,
-    CountryComponent,
+    CountryComponent
   ],
   imports: [
     BrowserModule,
