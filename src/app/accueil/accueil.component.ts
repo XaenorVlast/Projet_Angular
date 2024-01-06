@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-acceuil',
-  templateUrl: './acceuil.component.html',
-  styleUrls: ['./acceuil.component.scss']
+  selector: 'app-accueil',
+  templateUrl: './accueil.component.html',
+  styleUrls: ['./accueil.component.scss']
 })
-export class AcceuilComponent {
+export class AccueilComponent {
   constructor(private router :Router) {}
   choisirProduit() {
     this.router.navigateByUrl(`Product`);

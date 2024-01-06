@@ -1,55 +1,63 @@
+/* Commentaires ajoutés au code CSS */
+
+/* Style de base pour le corps de la page */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f5f1ec;
-  margin: 0;
-  padding: 0;
+  font-family: 'Arial', sans-serif; /* Utilisation de la police Arial ou sans-serif */
+  background-color: #f5f1ec; /* Couleur de fond pour la page */
+  margin: 0; /* Suppression des marges par défaut du corps de la page */
+  padding: 0; /* Suppression des espacements par défaut du corps de la page */
 }
 
-
+/* Style pour les titres de niveau 2, 3 et 4 */
 h2, h3, h4 {
-  font-family: 'Arial'; 
+  font-family: 'Arial'; /* Utilisation de la police Arial pour les titres */
 }
 
+/* Style pour les paragraphes */
 p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 16px; /* Taille de police des paragraphes */
+  line-height: 1.5; /* Espacement entre les lignes des paragraphes */
 }
 
+/* Style pour le conteneur de cartes */
 .card-container {
-  margin-bottom: 60px;
+  margin-bottom: 60px; /* Espacement inférieur du conteneur de cartes */
 }
 
+/* Style pour le corps de la page avec une couleur de fond différente */
 body {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; /* Couleur de fond différente pour le corps de la page */
 }
 
+/* Style pour le conteneur principal avec un espacement supérieur */
 .container {
-  margin-top: 50px;
+  margin-top: 50px; /* Espacement supérieur du conteneur principal */
 }
 
-/* Custom animation class */
+/* Classe d'animation personnalisée */
 .animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
+  animation-duration: 1s; /* Durée de l'animation de 1 seconde */
+  animation-fill-mode: both; /* L'animation prend effet au début et à la fin */
 }
 
-/* Animate fade and slideInUp */
+/* Animation de fondu et de glissement vers le haut */
 .fade-and-slide {
-  animation: fadeAndSlide 1s ease;
+  animation: fadeAndSlide 1s ease; /* Application de l'animation fadeAndSlide avec une durée de 1 seconde et une fonction d'aise */
 }
 
+/* Définition de l'animation fadeAndSlide */
 @keyframes fadeAndSlide {
   0% {
-    opacity: 0;
-    transform: translateY(50px);
+    opacity: 0; /* Opacité à 0% au début de l'animation */
+    transform: translateY(50px); /* Déplacement vers le haut de 50 pixels au début de l'animation */
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Opacité à 100% à la fin de l'animation */
+    transform: translateY(0); /* Aucun déplacement vers le haut à la fin de l'animation */
   }
 }
 
-/* Add fade-and-slide class to the cards */
+/* Ajout de la classe fade-and-slide aux cartes animées */
 .card.animated {
-  visibility: visible !important;
+  visibility: visible !important; /* Visibilité forcée des cartes animées (évite les problèmes de priorité CSS) */
 }

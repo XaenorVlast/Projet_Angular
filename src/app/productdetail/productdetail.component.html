@@ -13,18 +13,18 @@
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title" style="color: red">{{ product.product_name }}</h5><br>
-                          <h6 class="card-text"><strong>Barcode:</strong>{{product.id}}</h6><br>
-                          <h6 class="card-text"><strong>Marque :</strong> {{ product.brands }}</h6><br>
-                          <h6 class="card-text"><strong>Catégories :</strong> {{ product.categories }}</h6><br>
-                          <h6 class="card-text"><strong>Nom générique :</strong> {{ product.generic_name }}</h6><br>                              
-                          <h6 class="card-text"><strong>Quantité :</strong> {{ product.quantity }}</h6><br>
-                          <h6 class="card-text"><strong>Packaging :</strong> {{ product.packaging}}</h6><br>
-                          <h6 class="card-text"><strong>Labels, certifications, awards</strong> {{ product.labels}}</h6><br>
-                          <h6 class="card-text"><strong>Origine du produit:</strong> {{ product.origin}}</h6><br>                                      
-                          <h6 class="card-text"><strong>Magasins :</strong> {{ product.stores}}</h6><br>
-                          <h6 class="card-text"><strong>Pays :</strong> {{product.countries}}</h6><br>
-                          <a class="btn btn-primary" (click)="returnAcceuil()">Retour</a>
+                          <h5 class="card-title" style="color: red">{{ product.product_name }}</h5><br><!--On affiche le produit-->
+                          <h6 class="card-text"><strong>Barcode:</strong>{{product.id}}</h6><br><!--Affichage identifiant-->
+                          <h6 class="card-text"><strong>Marque :</strong> {{ product.brands }}</h6><br><!--Affichage marque-->
+                          <h6 class="card-text"><strong>Catégories :</strong> {{ product.categories }}</h6><br><!--Affichage catégorie produit-->
+                          <h6 class="card-text"><strong>Nom générique :</strong> {{ product.generic_name }}</h6><br><!--Affichage nom générique-->    
+                          <h6 class="card-text"><strong>Quantité :</strong> {{ product.quantity }}</h6><br><!--Affichage quantité produit-->
+                          <h6 class="card-text"><strong>Packaging :</strong> {{ product.packaging}}</h6><br><!--Affichage packaging-->
+                          <h6 class="card-text"><strong>Labels, certifications, awards</strong> {{ product.labels}}</h6><br><!--Affichage labels-->
+                          <h6 class="card-text"><strong>Origine du produit:</strong> {{ product.origin}}</h6><br><!--Affichage origine produit-->       
+                          <h6 class="card-text"><strong>Magasins :</strong> {{ product.stores}}</h6><br><!--Affichage magasins-->
+                          <h6 class="card-text"><strong>Pays :</strong> {{product.countries}}</h6><br><!--Affichage pays-->
+                          <a class="btn btn-primary" (click)="returnAcceuil()">Retour</a><!--Bouton retourner à l'accueil-->
                         </div>
                        </div>
                       </div>
@@ -38,37 +38,40 @@
           <div class="row">
             <div class="col-12">
                <div class="card product-health w-100 h-100">
-               <h2 class="gras">Health</h2><br>
+               <h2 class="gras">Health</h2><br><!--Container Health-->
                  <div class="row g-0">
                     <h3 style="color: green;">Ingredients</h3>
                     <div class="col-md-2">
                        <img class="card-img-top"[src]="product.image_ingredients_url" style="height: 200px;"><br>
                        <h3> Food processing </h3>
+                       <br>
                          <!-- Ingredients analysis --->
-                        <div class="ingredients-analysis-level d-flex align-items-start">
-                        <h4>Ingredients analysis</h4>
+                        <h5>Ingredients analysis</h5>
                          <!-- Palm oil --->
+                         <!--Si le tag ingrédient analysis est égale à palm oil free : on affiche un texte qui indique qu'il y a pas d'huile de palme-->
                         <div *ngIf="product.ingredients_analysis_tags[0] === 'en:palm-oil-free'" class="d-flex align-items-center">
-                             <div class="col">
+                             <div class="col-auto">
                                  <h4 class="gras" style="color: green;">Palm oil free</h4>
                               </div>
                         </div>
+                        <!--Si le tag ingrédient analysis est égale à may-contain-palm-oil: on affiche un texte qui indique qu'il peut contenir de l'huile de palme-->
                         <div *ngIf="product.ingredients_analysis_tags[0] === 'en:may-contain-palm-oil'" class="d-flex align-items-center">
-                             <div class="col">
+                             <div class="col-auto">
                                  <h4 class="gras" style="color: orange;">May contain palm oil</h4>
                              </div>
                         </div>
+                        <!--Si le tag ingrédient analysis est égale à palm oil free : on affiche un texte qui indique qu'il y a pas d'huile de palme-->
                         <div *ngIf="product.ingredients_analysis_tags[0] === 'en:palm-oil'" class="d-flex align-items-center">
-                            <div class="col">
+                            <div class="col-auto">
                                 <h4 class="gras" style="color: red;">Palm oil</h4>
                             </div>
                         </div>
+                        <!--Si le tag ingrédient analysis est égale à palm oil free : on affiche un texte qui indique qu'il y a pas d'huile de palme-->
                         <div *ngIf="product.ingredients_analysis_tags[0] === 'en:palm-oil-status-unknown'" class="d-flex align-items-center">
                             <div class="col">
                                 <h4 class="gras" style="color: grey;">Palm oil unknown</h4>
                             </div>
                         </div>
-                   </div><br><br>
                         <!-- Vegan --->
                         <div *ngIf="product.ingredients_analysis_tags[1] === 'en:vegan'" class="d-flex align-items-center">
                             <div class="col">
@@ -90,7 +93,7 @@
                             <h4 class="gras" style="color: grey;">Vegan unknown</h4>
                         </div>
                     </div>
-                </div><br><br>
+                </div>
                         <!-- Vegetarian --->
                         <div class="ingredients-analysis-level d-flex align-items-start">
                             <div *ngIf="product.ingredients_analysis_tags[2] === 'en:vegetarian'" class="d-flex align-items-center">
@@ -151,10 +154,10 @@
                                     </div>
                                 </div>
                             </button>
-                        </div><br>
+                        </div><br><br>
                                 <div *ngIf="isNovaGroupVisible">
                                     <a href="https://world.openfoodfacts.org/nova" class="btn btn-success"> Learn more about the Nova Classification</a>
-                                </div><br>
+                                </div><br><br>
 
                                 <!-- Card Nutrition-->
                                 <h3> Nutrition</h3><br>
@@ -166,7 +169,7 @@
                                         <img src="https://static.openfoodfacts.org/images/attributes/dist/nutriscore-a.svg">
                                         </div>
                                         <div class="col">
-                                          <h4 class="gras" style="color: green;">Unprocessed or minimally processed foods</h4>
+                                          <h4 class="gras" style="color: green;">Very good nutritional quality</h4>
                                         </div>
                                        </div>
                                        <!--Nutri Score B --->
@@ -175,7 +178,7 @@
                                         <img src="https://static.openfoodfacts.org/images/attributes/dist/nutriscore-b.svg">
                                       </div>
                                       <div class="col">
-                                       <h4 class="gras" style="color: lightgreen;">Processed culinary ingredients</h4>
+                                       <h4 class="gras" style="color: lightgreen;">Good nutritional quality</h4>
                                       </div>
                                      </div>
                                      <!--Nutri Score C --->
@@ -184,7 +187,7 @@
                                        <img src="https://static.openfoodfacts.org/images/attributes/dist/nutriscore-c.svg">
                                      </div>
                                      <div class="col">
-                                       <h4 class="gras" style="color: yellow;">Processed foods</h4>
+                                       <h4 class="gras" style="color: yellow;">Moderate nutritional quality</h4>
                                      </div>
                                     </div>
                                     <!--Nutri Score D --->
@@ -193,7 +196,7 @@
                                       <img src="https://static.openfoodfacts.org/images/attributes/dist/nutriscore-d.svg">
                                     </div>
                                      <div class="col">
-                                      <h4 class="gras" style="color: orange;">Ultra processed foods</h4>
+                                      <h4 class="gras" style="color: orange;">Bad nutritional quality</h4>
                                      </div>
                                     </div>
                                     <!--Nutri Score E --->
@@ -202,7 +205,7 @@
                                       <img src="https://static.openfoodfacts.org/images/attributes/dist/nutriscore-e.svg">
                                     </div>
                                      <div class="col">
-                                       <h4 class="gras" style="color: red;">Ultra processed foods</h4>
+                                       <h4 class="gras" style="color: red;">Very bad nutritional quality</h4>
                                       </div>
                                     </div>
                                    </button>
@@ -220,24 +223,24 @@
                                     <h5>Sodium : {{product.nutriscore_data.sodium_points}} / 10 </h5><br>
                                     <h5>Nutritional score : {{product.nutriscore_data.score}}</h5>
                                     <a href="https://world.openfoodfacts.org/nutriscore" class="btn btn-success"> Learn more about the Nutriscore Classification</a>
-                                </div><br>
+                                </div><br><br>
 
                                    <!-- Quantités-->
                                     <!-- Fat --->
                                     <div>
                                       <div class="nutrient-level fat">
                                         <div class="nutrient-level d-flex align-items-start">
-                                          <div *ngIf="product.nutrient_levels.fat === 'low'" class="mr-2">
+                                          <div *ngIf="product.nutrient_levels.fat === 'low'">
                                           <img src="https://static.openfoodfacts.org/images/misc/low.svg">
                                           </div>
-                                          <div *ngIf="product.nutrient_levels.fat === 'moderate'" class="mr-2">
+                                          <div *ngIf="product.nutrient_levels.fat === 'moderate'">
                                           <img src="https://static.openfoodfacts.org/images/misc/moderate.svg">
                                           </div>
-                                          <div *ngIf="product.nutrient_levels.fat === 'high'" class="mr-2">
+                                          <div *ngIf="product.nutrient_levels.fat === 'high'">
                                           <img src="https://static.openfoodfacts.org/images/misc/high.svg">
                                         </div>
-                                      <div class="d-flex align-items-center"> <!-- Ajout des classes pour l'alignement -->
-                                      <p class="mb-0">Fat in {{product.nutrient_levels.fat}} quantity</p>
+                                      <div class="d-flex align-items-start"> <!-- Ajout des classes pour l'alignement -->
+                                      <p>Fat in {{product.nutrient_levels.fat}} quantity</p>
                                      </div>
                                     </div>
                                    </div>
@@ -289,13 +292,13 @@
                             </div><br>
                         </div>
 
-                            <!-- Table Nutrition facts-->        
+                            <!-- Tableau Nutrition facts-->        
                                 <div class="d-flex align-items-center">
                                    <img src="https://static.openfoodfacts.org/images/icons/dist/scale-balance.svg" style="height: 50px;" class="mr-3">
                                    <h3>Nutrition facts</h3>
                                 </div>
                                   <table class="nutrition-facts">
-                                   <tr>
+                                   <tr><!--Colonnes-->
                                     <th class="highlight nutrient-column">Éléments nutritifs</th>
                                     <th class="highlight nutrient-column">Par 100g/100ml</th>
                                     <th class="highlight nutrient-column">Par portion </th>
@@ -391,13 +394,12 @@
                                      <td class="highlight nutrient-column">{{ product.nutriments.fluor_serving }} g</td>
                                     </tr>
                                     <h5 class="gras" style="align-items: left;">Serving size: <p>{{product.serving_size}}</p> </h5>
-
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div><br>
-                      <!-- Card Environment -->
+                      <!-- Container Card Environment -->
                          <div class="container mt-4" style="padding-top: 3%; padding-bottom: 3%">
                            <div class="row">
                             <div class="card product-environment w-100 h-100">

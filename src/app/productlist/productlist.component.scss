@@ -1,83 +1,97 @@
+
+/* Style pour la classe .main-container */
 .main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; /* Utilisation de flexbox pour organiser les éléments enfants */
+  flex-direction: column; /* Les enfants seront disposés en colonne */
+  align-items: center; /* Centrer les enfants horizontalement */
 }
 
+/* Style pour la classe .container */
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4%;
-  margin-bottom: 2%;
+  display: flex; /* Utilisation de flexbox */
+  flex-direction: column; /* Disposition des enfants en colonne */
+  justify-content: center; /* Centrer les enfants verticalement */
+  align-items: center; /* Centrer les enfants horizontalement */
+  margin-top: 4%; /* Marge en haut de 4% de la hauteur de l'élément parent */
+  margin-bottom: 2%; /* Marge en bas de 2% de la hauteur de l'élément parent */
 }
 
+/* Style pour la classe .search-container */
 .search-container {
-  margin-bottom: 2%;
+  margin-bottom: 2%; /* Marge en bas de 2% de la hauteur de l'élément parent */
 }
 
+/* Style pour la classe .input-group */
 .input-group {
-  width: 100%;
-  max-width: 400px;
+  width: 100%; /* Largeur de 100% de l'élément parent */
+  max-width: 400px; /* Largeur maximale de 400 pixels */
 }
 
+/* Style pour la classe .form-select */
 .form-select {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
+  width: 100%; /* Largeur de 100% de l'élément parent */
+  padding: 10px; /* Rembourrage de 10 pixels */
+  font-size: 1rem; /* Taille de police de 1 rem */
+  border-radius: 5px; /* Bordure arrondie de 5 pixels */
 }
 
+/* Style pour la classe .products-container */
 .products-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: flex; /* Utilisation de flexbox */
+  flex-wrap: wrap; /* Les enfants vont passer à la ligne s'ils ne rentrent pas */
+  justify-content: space-around; /* Espacement équitable des enfants autour de l'axe principal */
 }
 
+/* Style pour la classe .col */
 .col {
-  flex: 0 0 30%;
-  margin-bottom: 20px;
+  flex: 0 0 30%; /* Flexibilité des enfants (flex-grow, flex-shrink, flex-basis) */
+  margin-bottom: 20px; /* Marge en bas de 20 pixels */
 }
 
+/* Style pour la classe .button-container */
 .button-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  display: flex; /* Utilisation de flexbox */
+  justify-content: space-between; /* Espacement équitable des enfants sur l'axe principal */
+  margin-bottom: 20px; /* Marge en bas de 20 pixels */
 }
 
+/* Style pour les boutons à l'intérieur de .button-container */
 .button-container button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px; /* Rembourrage de 10 pixels en haut/bas, 20 pixels à gauche/droite */
+  font-size: 1rem; /* Taille de police de 1 rem */
+  background-color: #007bff; /* Couleur de fond bleue */
+  color: #fff; /* Couleur du texte blanc */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Bordure arrondie de 5 pixels */
+  cursor: pointer; /* Curseur de type pointeur */
+  transition: background-color 0.3s ease; /* Transition fluide de la couleur de fond */
 }
 
+/* Style pour les boutons lorsqu'ils sont survolés */
 .button-container button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Couleur de fond bleue foncée lors du survol */
 }
 
+/* Style pour la classe .info-container */
 .info-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 5%;
+  display: flex; /* Utilisation de flexbox */
+  justify-content: center; /* Centrer les enfants horizontalement */
+  align-items: center; /* Centrer les enfants verticalement */
+  flex-direction: column; /* Disposition des enfants en colonne */
+  padding-bottom: 5%; /* Rembourrage en bas de 5% de la hauteur de l'élément parent */
 }
 
+/* Style pour les paragraphes à l'intérieur de .info-container */
 .info-container p {
-  font-size: 1.2rem;
-  color: #343a40;
-  margin: 10px 0;
+  font-size: 1.2rem; /* Taille de police de 1.2 rem */
+  color: #343a40; /* Couleur du texte sombre */
+  margin: 10px 0; /* Marge de 10 pixels en haut/bas */
 }
 
+/* Style global pour le corps de la page */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f5f1ec;
-  margin: 0;
-  padding: 0;
+  font-family: 'Arial', sans-serif; /* Police de caractères utilisée sur la page */
+  background-color: #f5f1ec; /* Couleur de fond de la page */
+  margin: 0; /* Pas de marge extérieure */
+  padding: 0; /* Pas de rembourrage extérieur */
 }

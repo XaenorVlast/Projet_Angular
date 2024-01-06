@@ -1,82 +1,88 @@
-/* Header Styling */
+/* Styling de la barre de navigation */
 .navbar {
-  background-color: #ffc107;
-  font-family: sans-serif;
-  font-weight: bold;
+  background-color: #ffc107; /* Couleur de fond jaune */
+  font-family: sans-serif; /* Police de caractères sans-serif */
+  font-weight: bold; /* Gras */
 }
 
+/* Styling de la vidéo dans le conteneur */
 .video-container {
   display: block;
   margin: auto;
 }
 
+/* Styling de l'iframe de la vidéo */
 .video-container iframe {
   width: 50%;
   height: 100%;
 }
 
+/* Styling du conteneur principal avec une opacité pour une légère transparence */
 .container-sm {
   position: relative;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
-  margin-top: 20vh;
+  margin-top: 20vh; /* Marge depuis le haut de la vue */
 }
 
+/* Styling des liens de navigation */
 .navbar-nav .nav-link {
-  color: #343a40;
+  color: #343a40; /* Couleur du texte sombre */
 }
 
+/* Styling des liens de navigation au survol avec une bordure inférieure */
 .navbar-nav .nav-link:hover {
-  border-bottom: 2px solid #343a40;
+  border-bottom: 2px solid #343a40; /* Bordure inférieure sombre au survol */
 }
 
-/* Logo Styling */
+/* Styling du logo */
 #logo {
   height: 40px;
   width: auto;
 }
 
-/* Search Form Styling */
+/* Styling du formulaire de recherche */
 .form-control {
-  border-radius: 0
+  border-radius: 0; /* Bordure sans arrondi */
 }
 
-/* Search Button Styling */
+/* Styling du bouton de recherche */
 .btn-outline-success {
-  color: #28a745;
-  border-color: #28a745;
+  color: #28a745; /* Couleur du texte verte */
+  border-color: #28a745; /* Couleur de la bordure verte */
 }
 
 .btn-outline-success:hover {
-  background-color: #28a745;
-  color: #ffffff;
+  background-color: #28a745; /* Couleur de fond verte au survol */
+  color: #ffffff; /* Couleur du texte blanc au survol */
 }
 
-/* Navbar Right Section Styling */
+/* Styling de la section à droite de la barre de navigation */
 .navbar-nav.ml-auto {
   margin-right: 20px;
 }
 
+/* Styling du bouton primaire */
 .btn-primary {
-  background-color: #ffc107;
-  border-color: #ffc107;
-  font-weight: bold;
+  background-color: #ffc107; /* Couleur de fond jaune */
+  border-color: #ffc107; /* Couleur de la bordure jaune */
+  font-weight: bold; /* Gras */
 }
 
 .btn-primary:hover {
-  background-color: #e0a800;
-  border-color: #e0a800;
+  background-color: #e0a800; /* Couleur de fond jaune plus foncé au survol */
+  border-color: #e0a800; /* Couleur de la bordure jaune plus foncé au survol */
 }
 
-/* Footer Styling */
+/* Styling du Footer */
 .fixed-content {
-  background-color: #343a40;
-  color: #ffffff; 
-  padding: 20px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  background-color: #343a40; /* Couleur de fond sombre */
+  color: #ffffff; /* Couleur du texte blanc */
+  padding: 20px 0; /* Espacement intérieur */
+  position: fixed; /* Position fixe en bas de la page */
+  bottom: 0; /* En bas de la page */
+  width: 100%; /* Pleine largeur */
 }
 
 .fixed-content img {
@@ -89,12 +95,14 @@
   margin-bottom: 10px;
 }
 
+/* Styling pour une liste horizontale sans puces */
 .inline-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Styling pour chaque élément de la liste horizontale */
 .inline-list li {
   display: inline-block;
   margin-right: 15px;
@@ -104,21 +112,23 @@
   margin-right: 0;
 }
 
+/* Styling des liens dans la liste horizontale */
 .inline-list a {
-  color: #ffffff;
-  text-decoration: none;
+  color: #ffffff; /* Couleur du texte blanc */
+  text-decoration: none; /* Pas de soulignement du texte */
 }
 
 .inline-list a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Soulignement du texte au survol */
 }
-/* Custom animation class */
+
+/* Animation personnalisée */
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 
-/* Animate fade and slideInUp */
+/* Animation de fondu et de déplacement vers le haut */
 .fade-and-slide {
   animation: fadeAndSlide 1.5s ease;
 }
@@ -134,29 +144,33 @@
   }
 }
 
+/* Animation de transformation au survol des cartes */
 .card.animated:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 2s ease-in-out, box-shadow 2s ease-in-out;
 }
 
-
-/* Add fade-and-slide class to the cards */
+/* Ajout de la classe fade-and-slide aux cartes avec animation */
 .card.animated {
   visibility: visible !important;
 }
 
+/* Styling de l'image */
 .img {
   width: 50px;
 }
+
+/* Styling de la carte avec une largeur maximale et centrée horizontalement */
 .card {
-  max-width: 300px; /* Réglez la largeur maximale selon vos besoins */
-  margin: 0 auto; /* Centrez les cards horizontalement */
+  max-width: 300px;
+  margin: 0 auto;
 }
 
+/* Styling du corps de la page avec une police de caractères et une couleur de fond */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f5f1ec;
+  background-color: #f5f1ec; /* Couleur de fond gris clair */
   margin: 0;
   padding: 0;
 }
