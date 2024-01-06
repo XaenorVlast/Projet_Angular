@@ -24,27 +24,19 @@ export class ProductListComponent implements OnInit {
 
   // Méthode du cycle de vie du composant appelée lors de son initialisation
   ngOnInit(): void {
-    // Initialisation de la page actuelle avec la valeur stockée dans le service ProductService
-    this.currentPage = this.productService.currentPage;
+
     // Appel de la méthode pour charger les produits
+    this.currentPage=1;
     this.loadProducts();
   }
 
   // Méthode pour charger les produits depuis le service ProductService
   loadProducts(): void {
-    // Activation de l'état de chargement
-    this.loading = true;
-  
-    // Simulation d'un temps de chargement de 1 seconde
-    setTimeout(() => {
-      // Appel du service ProductService pour récupérer les produits avec la pagination
-      this.productService.getProducts(this.currentPage, 8).subscribe(response => {
-        // Stockage des produits dans la propriété 'products' et désactivation de l'état de chargement
-        this.products = response.products;
-        this.loading = false;
-      });
-    }, 1000);
-  }
+    this.productService.getProducts(this.currentPage, 8).subscribe(response => {
+   this.products = response.products;
+
+ });
+}
   
   // Méthode pour passer à la page suivante
   ChangePagePlus() {

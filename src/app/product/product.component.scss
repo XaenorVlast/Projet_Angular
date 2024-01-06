@@ -17,7 +17,9 @@
   transform: translateY(-5px); /* L'effet de soulèvement */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée pour le survol */
 }
-
+.product-title {
+  font-weight: bold;
+}
 .product-image {
   width: 100%; /* L'image couvre toute la largeur de son conteneur */
   height: 180px; /* Hauteur fixe pour toutes les images */

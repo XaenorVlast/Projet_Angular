@@ -75,7 +75,7 @@ export class ProductDetailComponent implements OnInit {
       }
    }
 
-       // Logique pour déterminer le niveau de sel
+       // Logique pour déterminer le niveau de sucre
 choisirNutrientSugarLevel() {
   if (this.product.nutrient_levels.sugars === 'low') {
     this.nutrientlevel = "low";

@@ -10,8 +10,7 @@ import { ProductResponse, ProductUnit } from '../models/product.models';
 })
 export class ProductService {
 
-    // Propriété pour stocker le numéro de la page actuelle
-    currentPage = 1;
+
 
     // Constructeur du service, injecte le service HttpClient pour effectuer des requêtes HTTP
     constructor(private http: HttpClient) { }

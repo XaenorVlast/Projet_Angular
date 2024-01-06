@@ -14,14 +14,12 @@
                       <div class="col-md-8">
                         <div class="card-body">
                           <h5 class="card-title" style="color: red">{{ product.product_name }}</h5><br><!--On affiche le produit-->
-                          <h6 class="card-text"><strong>Barcode:</strong>{{product.id}}</h6><br><!--Affichage identifiant-->
                           <h6 class="card-text"><strong>Marque :</strong> {{ product.brands }}</h6><br><!--Affichage marque-->
                           <h6 class="card-text"><strong>Catégories :</strong> {{ product.categories }}</h6><br><!--Affichage catégorie produit-->
                           <h6 class="card-text"><strong>Nom générique :</strong> {{ product.generic_name }}</h6><br><!--Affichage nom générique-->    
                           <h6 class="card-text"><strong>Quantité :</strong> {{ product.quantity }}</h6><br><!--Affichage quantité produit-->
                           <h6 class="card-text"><strong>Packaging :</strong> {{ product.packaging}}</h6><br><!--Affichage packaging-->
-                          <h6 class="card-text"><strong>Labels, certifications, awards</strong> {{ product.labels}}</h6><br><!--Affichage labels-->
-                          <h6 class="card-text"><strong>Origine du produit:</strong> {{ product.origin}}</h6><br><!--Affichage origine produit-->       
+                          <h6 class="card-text"><strong>Labels, certifications, awards</strong> {{ product.labels}}</h6><br><!--Affichage labels-->     
                           <h6 class="card-text"><strong>Magasins :</strong> {{ product.stores}}</h6><br><!--Affichage magasins-->
                           <h6 class="card-text"><strong>Pays :</strong> {{product.countries}}</h6><br><!--Affichage pays-->
                           <a class="btn btn-primary" (click)="returnAcceuil()">Retour</a><!--Bouton retourner à l'accueil-->
@@ -314,11 +312,6 @@
                                     <td class="highlight nutrient-column">{{ product.nutriments.fat_serving }} g</td>
                                    </tr>
                                    <tr>
-                                    <td class="highlight nutrient-column">Acides gras saturés</td>
-                                    <td class="highlight nutrient-column">{{ product.nutriments.saturated_fat_100g}} g</td>
-                                    <td class="highlight nutrient-column">{{ product.nutriments.saturated_fat_serving }} g</td>
-                                   </tr>
-                                   <tr>
                                     <td class="highlight nutrient-column">Glucides</td>
                                     <td class="highlight nutrient-column">{{ product.nutriments.carbohydrates_100g }} g</td>
                                     <td class="highlight nutrient-column">{{ product.nutriments.carbohydrates_serving }} g</td>
@@ -343,114 +336,45 @@
                                      <td class="highlight nutrient-column">{{ product.nutriments.salt_100g }} g</td>
                                      <td class="highlight nutrient-column">{{ product.nutriments.salt_serving }} g</td>
                                     </tr>
-                                    <tr>
-                                     <td class="highlight nutrient-column">Silice</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.silica_100g }} g</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.silica_serving }} g</td>
-                                    </tr>
-                                    <tr>
-                                     <td class="highlight nutrient-column">Bicarbonate</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.bicarbonate_100g }} g</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.bicarbonate_serving }} g</td>
-                                    </tr>
-                                    <tr>
-                                     <td class="highlight nutrient-column">Potassium</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.potassium_100g }} g</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.potassium_serving }} g</td>
-                                    </tr>
-                                    <tr>
-                                     <td class="highlight nutrient-column">Chloride</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.chloride_100g }} g</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.chloride_serving }} g</td>
-                                    </tr>
-                                    <tr>
-                                     <td class="highlight nutrient-column">Calcium</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.calcium_100g }} g</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.calcium_serving }} g</td>
-                                    </tr>
-                                    <tr>
-                                     <td class="highlight nutrient-column">Magnesium</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.magnesium_100g }} g</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.magnesium_serving }} g</td>
-                                    </tr>
-                                    <tr>
-                                     <td class="highlight nutrient-column">Fruits vegetables nuts and rapeseed walnut and olive oils (estimation)</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.fruits_vegetables_nuts_estimate_from_ingredients_100g}} g</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.fruits_vegetables_nuts_estimate_from_ingredients_serving }} g</td>
-                                    </tr>
-                                    <tr>
-                                     <td class="highlight nutrient-column">Sulphate</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.sulphate_100g }} g</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.sulphate_serving }} g</td>
-                                    </tr>
-                                    <tr>
-                                     <td class="highlight nutrient-column">Nitrate</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.nitrate_100g }} g</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.nitrate_serving }} g</td>
-                                    </tr>
-                                    <tr>
-                                     <td class="highlight nutrient-column">Fluor</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.fluor_100g }} g</td>
-                                     <td class="highlight nutrient-column">{{ product.nutriments.fluor_serving }} g</td>
-                                    </tr>
                                     <h5 class="gras" style="align-items: left;">Serving size: <p>{{product.serving_size}}</p> </h5>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div><br>
-                      <!-- Container Card Environment -->
-                         <div class="container mt-4" style="padding-top: 3%; padding-bottom: 3%">
-                           <div class="row">
-                            <div class="card product-environment w-100 h-100">
-                            <h2 class="gras"> Environment </h2><br>
-                              <div *ngIf="product.ecoscore_tags[0] === 'a'">
-                              <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-a.svg">
-                              <h4 class="gras" style="color: green;">Eco-Score A - Very low environmental impact </h4>
-                              </div>
-                              <div *ngIf="product.ecoscore_tags[0] === 'b'">
-                              <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-b.svg">
-                              <h4 class="gras" style="color: lightgreen;">Eco-Score B - Low environmental impact</h4>
-                              </div>
-                              <div *ngIf="product.ecoscore_tags[0] === 'c'">
-                              <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-c.svg">
-                              <h4 class="gras" style="color: yellow;">Eco-Score C - Moderate environmental impact</h4>
-                              </div>
-                              <div *ngIf="product.ecoscore_tags[0] === 'd'">
-                              <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-d.svg">
-                              <h4 class="gras" style="color: orange;">Eco-Score D - High environmental impact</h4>
-                              </div>
-                              <div *ngIf="product.ecoscore_tags[0] === 'e'">
-                              <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-e.svg">
-                              <h4 class="gras" style="color: red;">Eco-Score E - Very high environmental impact</h4>
-                              </div>
-                              <div *ngIf="product.ecoscore_tags[0] === 'not-applicable'">
-                              <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-not-applicable.svg">
-                              <h4 class="gras" style="color: grey;">Eco-Score not yet applicable for the category :<p>{{product.ecoscore_data.adjustments.packaging.ecoscore_not_applicable_for_category}}</p></h4>
-                              </div>
-                              <div *ngIf="product.ecoscore_tags[0] === 'unknown'">
-                              <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-unknown.svg">
-                              <h4 class="gras" style="color: black;">Eco-Score not computed Unknown environmental impact</h4>
-                              </div><br>
-                              <h4 class="souligner"> Packaging </h4><br>
-                              <h4> Packaging parts </h4><br>
-                                <p><img src="https://static.openfoodfacts.org/images/icons/dist/help.svg" style="height: 60px;"></p>
-                                <p>{{product.ecoscore_data.adjustments.packaging.packagings[0].number_of_units}} x {{product.packaging_old_before_taxonomization}} {{product.ecoscore_data.adjustments.packaging.packagings[0].quantity_per_unit}}</p>
-                                <p>{{product.ecoscore_data.adjustments.packaging.packagings[0].number_of_units}} x {{product.ecoscore_data.adjustments.packaging.packagings[1].shape}}</p>
-                                <p>{{product.ecoscore_data.adjustments.packaging.packagings[0].number_of_units}} x {{product.ecoscore_data.adjustments.packaging.packagings[2].shape}}</p><br>
-                                <h4> Packaging materials</h4><br>
-
-                                <table class="nutrition-facts">
-                                  <tr>
-                                    <th class="highlight nutrient-column">Material</th>
-                                    <th class="highlight nutrient-column">%</th>
-                                    <th class="highlight nutrient-column">Packaging weight</th>
-                                    <th class="highlight nutrient-column">Packaging weight per 100g of product</th>
-                                  </tr>
-                                  <tr>
-                                    <td class="highlight nutrient-column"><p>{{product.packagings_materials_main}}</p></td><td class="highlight nutrient-column">{{ product.nutriments.energy_serving }} kJ ({{ product.nutriments.energy_serving }} kcal)</td>
-                                  </tr> 
-                                </table><br>
-                            </div>
-                       </div>
-                    </div>
+ <!-- Container Card Environment -->
+<div class="container mt-4" style="padding-top: 3%; padding-bottom: 3%">
+  <div class="row">
+    <div class="card product-environment w-100 h-100">
+      <h2 class="gras">Environment</h2><br>
+      <div *ngIf="product.ecoscore_tags[0] === 'a'" style="text-align: center;">
+        <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-a.svg" style="margin: auto;">
+        <h4 class="gras" style="color: green;">Eco-Score A - Very low environmental impact</h4>
+      </div>
+      <div *ngIf="product.ecoscore_tags[0] === 'b'" style="text-align: center;">
+        <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-b.svg" style="margin: auto;">
+        <h4 class="gras" style="color: lightgreen;">Eco-Score B - Low environmental impact</h4>
+      </div>
+      <div *ngIf="product.ecoscore_tags[0] === 'c'" style="text-align: center;">
+        <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-c.svg" style="margin: auto;">
+        <h4 class="gras" style="color: yellow;">Eco-Score C - Moderate environmental impact</h4>
+      </div>
+      <div *ngIf="product.ecoscore_tags[0] === 'd'" style="text-align: center;">
+        <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-d.svg" style="margin: auto;">
+        <h4 class="gras" style="color: orange;">Eco-Score D - High environmental impact</h4>
+      </div>
+      <div *ngIf="product.ecoscore_tags[0] === 'e'" style="text-align: center;">
+        <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-e.svg" style="margin: auto;">
+        <h4 class="gras" style="color: red;">Eco-Score E - Very high environmental impact</h4>
+      </div>
+      <div *ngIf="product.ecoscore_tags[0] === 'not-applicable'" style="text-align: center;">
+        <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-not-applicable.svg" style="margin: auto;">
+        <h4 class="gras" style="color: grey;">Eco-Score not yet applicable for the category :</h4>
+      </div>
+      <div *ngIf="product.ecoscore_tags[0] === 'unknown'" style="text-align: center;">
+        <img src="https://static.openfoodfacts.org/images/attributes/dist/ecoscore-unknown.svg" style="margin: auto;">
+        <h4 class="gras" style="color: black;">Eco-Score not computed Unknown environmental impact</h4>
+      </div><br>
+    </div>
+  </div>
+</div>
