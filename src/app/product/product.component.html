@@ -1,42 +1,42 @@
 <!-- Auteurs du code : Maxence MAYOLY, Loick GOMEZ, Clément CHARABOT, date : 7 janvier 2024 --->
 
 <!--Carte du produit dans la liste de produits-->
+
 <body>
-  <div class="product-card" (click)="choisirProduit()" >
-  <img [src]="product.image_url" alt="{{ product.product_name }}" class="product-image" style="max-width: 50%;
+  <div class="product-card" (click)="choisirProduit()">
+    <img [src]="product.image_url" alt="{{ product.product_name }}" class="product-image" style="max-width: 50%;
   height: 160px;
   display: inline-block;"> <!-- Image du produit-->
-   <div class="product-info">
-     <h5 class="product-title">{{ product.product_name }}</h5><!--Nom du produit-->
-     <p class="product-brand">{{ product.brands | lowercase }}</p><!-- Marque du produit-->
-     <img [src]="nutriscore" alt="nutriscore" class="product-image" style="height: 50px;">
-     <img [src]="ecoscore" alt="ecoscore" class="product-image" style="height: 50px;">
-     <div>
-          <!-- Si la valeur de novagroup est de catégorie 1-->
-          <div *ngIf="product.nova_groups_tags[0] === 'en:1-unprocessed-or-minimally-processed-foods'" class="d-flex align-items-center">
-              <div>
-              <img src="https://static.openfoodfacts.org/images/attributes/dist/nova-group-1.svg">
-              </div>
+    <div class="product-info">
+      <h5 class="product-title">{{ product.product_name }}</h5><!--Nom du produit-->
+      <img [src]="nutriscore" alt="nutriscore" class="product-image" style="height: 50px;">
+      <img [src]="ecoscore" alt="ecoscore" class="product-image" style="height: 50px;">
+      <div>
+        <!-- Si la valeur de novagroup est de catégorie 1-->
+        <div *ngIf="product.nova_groups_tags[0] === 'en:1-unprocessed-or-minimally-processed-foods'">
+          <div>
+            <img src="https://static.openfoodfacts.org/images/attributes/dist/nova-group-1.svg">
           </div>
-          <!-- Si la valeur de novagroup est de catégorie 2-->
-          <div *ngIf="product.nova_groups_tags[0] === 'en:2-processed-culinary-ingredients'" class="d-flex align-items-center">
-              <div>
-              <img src="https://static.openfoodfacts.org/images/attributes/dist/nova-group-2.svg">
-              </div>
+        </div>
+        <!-- Si la valeur de novagroup est de catégorie 2-->
+        <div *ngIf="product.nova_groups_tags[0] === 'en:2-processed-culinary-ingredients'">
+          <div>
+            <img src="https://static.openfoodfacts.org/images/attributes/dist/nova-group-2.svg">
           </div>
-              <!-- Si la valeur de novagroup est de catégorie 3-->
-              <div *ngIf="product.nova_groups_tags[0] === 'en:3-processed-foods'" class="d-flex align-items-center">
-              <div>
-              <img src="https://static.openfoodfacts.org/images/attributes/dist/nova-group-3.svg">
-            </div>
+        </div>
+        <!-- Si la valeur de novagroup est de catégorie 3-->
+        <div *ngIf="product.nova_groups_tags[0] === 'en:3-processed-foods'">
+          <div>
+            <img src="https://static.openfoodfacts.org/images/attributes/dist/nova-group-3.svg">
           </div>
-              <!-- Si la valeur de novagroup est de catégorie 4-->
-              <div *ngIf="product.nova_groups_tags[0] === 'en:4-ultra-processed-food-and-drink-products'" class="d-flex align-items-center">
-              <div>
-              <img src="https://static.openfoodfacts.org/images/attributes/dist/nova-group-4.svg">
-              </div>
+        </div>
+        <!-- Si la valeur de novagroup est de catégorie 4-->
+        <div *ngIf="product.nova_groups_tags[0] === 'en:4-ultra-processed-food-and-drink-products'">
+          <div>
+            <img src="https://static.openfoodfacts.org/images/attributes/dist/nova-group-4.svg">
           </div>
-     </div>
-   </div>
- </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
