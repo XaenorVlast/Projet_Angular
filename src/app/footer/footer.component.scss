@@ -1,50 +1,61 @@
+/* Commentaires ajoutés au code CSS */
+
+/* Style pour la zone de contenu fixe en bas de la page */
 .fixed-content {
-  background-color: #343a40;
-  color: #ffffff;
-  padding: 20px 0;
-  width: 100%;
-  text-align: center;
-  margin-top: auto; /* Push the content to the bottom */
+  background-color: #343a40; /* Couleur de fond de la zone de contenu fixe */
+  color: #ffffff; /* Couleur du texte dans la zone de contenu fixe */
+  padding: 20px 0; /* Espacement intérieur de la zone de contenu fixe (20 pixels en haut et en bas, 0 sur les côtés) */
+  width: 100%; /* Largeur de la zone de contenu fixe à 100% de la largeur de la page */
+  text-align: center; /* Alignement du texte au centre dans la zone de contenu fixe */
+  margin-top: auto; /* Pousser le contenu vers le bas en mettant la marge supérieure à 'auto' */
 }
 
+/* Style pour les images dans la zone de contenu fixe */
 .fixed-content img {
-  height: 50px;
-  width: auto;
-  margin-right: 10px;
+  height: 50px; /* Hauteur des images dans la zone de contenu fixe */
+  width: auto; /* Largeur automatique pour conserver les proportions des images */
+  margin-right: 10px; /* Espacement à droite des images dans la zone de contenu fixe */
 }
 
+/* Style pour les paragraphes dans la zone de contenu fixe */
 .fixed-content p {
-  margin-bottom: 10px;
-  font-size: 1.35rem;
-  text-align: center;
+  margin-bottom: 10px; /* Espacement inférieur des paragraphes dans la zone de contenu fixe */
+  font-size: 1.35rem; /* Taille de police des paragraphes dans la zone de contenu fixe */
+  text-align: center; /* Alignement du texte au centre dans la zone de contenu fixe */
 }
 
+/* Style pour la liste en ligne dans la zone de contenu fixe */
 .inline-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+  list-style: none; /* Suppression du style de puce de la liste en ligne */
+  padding: 0; /* Suppression des marges intérieures de la liste en ligne */
+  margin: 0; /* Suppression des marges extérieures de la liste en ligne */
+  text-align: center; /* Alignement du texte au centre dans la liste en ligne */
 }
 
+/* Style pour chaque élément de la liste en ligne */
 .inline-list li {
-  display: inline;
-  margin-right: 15px;
+  display: inline; /* Affichage en ligne des éléments de la liste en ligne */
+  margin-right: 15px; /* Espacement à droite entre les éléments de la liste en ligne */
 }
 
+/* Style pour le dernier élément de la liste en ligne (sans espacement à droite) */
 .inline-list li:last-child {
-  margin-right: 0;
+  margin-right: 0; /* Aucun espacement à droite pour le dernier élément de la liste en ligne */
 }
 
+/* Style pour les liens dans la liste en ligne */
 .inline-list a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.2rem;
+  color: #ffffff; /* Couleur du texte des liens dans la liste en ligne */
+  text-decoration: none; /* Suppression du soulignement des liens dans la liste en ligne */
+  font-size: 1.2rem; /* Taille de police des liens dans la liste en ligne */
 }
 
+/* Style pour le survol des liens dans la liste en ligne (soulignement) */
 .inline-list a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Soulignement au survol des liens dans la liste en ligne */
 }
 
+/* Style pour le pied de page */
 .my-footer {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Taille de police pour le pied de page */
 }

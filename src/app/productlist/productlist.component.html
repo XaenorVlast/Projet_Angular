@@ -5,26 +5,28 @@
   <div class="main-container">
     <div class="products-container row" *ngIf="products; else loading">
       <div class="col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let product of products">
-        <app-product [product]="product"></app-product>
+        <app-product [product]="product"></app-product><!--Affichage des produits dans la page-->
       </div>
     </div>
   </div>
-  
+
+  <!-- Fonctions pour aller à la page suivante, ou à la page précédente-->
   <div style="display: flex; justify-content: center;">
     <button (click)="ChangePageMoins()">Page Précédente</button>
     <button (click)="ChangePagePlus()">Page Suivante</button>
   </div>
   
+  <!--Affiche le numéro de page actuel du site avec les produits affichés-->
   <div class="info-container" style="text-align: center; margin-top: 10px;">
     <p>Numéro de page actuel : {{ currentPage }}</p>
   </div>
-  
-  <ng-template #loading>
+
+
+  <!--Texte pour afficher chargement des produits --->
+    <ng-template #loading>
     <div class="centered-content" style="margin-bottom: 2%; margin-top: 4%;">
       <p>Chargement des produits...</p>
     </div>
   </ng-template>
   
-  <!-- Ajoutez vos scripts ou liens vers des fichiers JavaScript ici si nécessaire -->
-  
-  </body>
+</body>

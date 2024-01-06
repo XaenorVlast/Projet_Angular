@@ -1,28 +1,36 @@
+/* Commentaires ajoutés au code CSS */
+
+/* Style pour la barre de navigation sur la page */
 #page .navbar {
-  height: 80px; /* Adjust the height as needed */
-  border-bottom: 2px solid #000; /* Border for the navbar */
+  height: 80px; /* Hauteur de la barre de navigation */
+  border-bottom: 2px solid #000; /* Bordure en bas de la barre de navigation */
 }
 
+/* Style pour le logo dans la barre de navigation */
 #page .navbar img#logo {
-  max-height: 60px; /* Adjust the max height of the logo to fit within the navbar */
-  margin: 10px; /* Adjust the margin to center the logo vertically within the taller navbar */
+  max-height: 60px; /* Hauteur maximale du logo pour s'adapter à la barre de navigation */
+  margin: 10px; /* Marge pour centrer le logo verticalement dans la barre de navigation plus haute */
 }
 
+/* Style pour les liens de navigation dans la barre de navigation */
 #page .navbar-nav .nav-link {
-  padding-top: 25px; /* Adjust the padding to vertically center the text within the taller navbar */
-  padding-bottom: 25px; /* Adjust the padding to vertically center the text within the taller navbar */
-  font-size: 25px; /* Adjust the font size for the nav links */
-  font-weight: bold;
+  padding-top: 25px; /* Espacement en haut pour centrer verticalement le texte dans la barre de navigation plus haute */
+  padding-bottom: 25px; /* Espacement en bas pour centrer verticalement le texte dans la barre de navigation plus haute */
+  font-size: 25px; /* Taille de police pour les liens de navigation */
+  font-weight: bold; /* Gras pour le texte des liens de navigation */
 }
 
+/* Style pour le bouton Github dans la barre de navigation */
 #page .navbar-nav .btn-white {
-  font-size: 18px; /* Adjust the font size for the Github button */
+  font-size: 18px; /* Taille de police pour le bouton Github */
 }
 
+/* Style pour l'icône du basculeur de la barre de navigation */
 #page .navbar-toggler-icon {
-  color: #000; /* Adjust the color of the navbar toggler icon */
+  color: #000; /* Couleur de l'icône du basculeur de la barre de navigation */
 }
 
+/* Style pour le bouton "Get App" */
 .btn-get-app {
   display: inline-block;
   padding: 15px 30px;
@@ -38,6 +46,52 @@
   transition: background-color 0.3s ease;
 }
 
+/* Style pour le survol du bouton "Get App" */
 .btn-get-app:hover {
   background-color: #0056b3;
+}
+
+/* Réinitialisation de la marge, du rembourrage et du style pour les boutons génériques */
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px; /* Taille de police pour les boutons génériques */
+  color: #333; /* Couleur du texte des boutons génériques */
+}
+
+/* Style pour le sélecteur de langue */
+.langue-selector {
+  display: inline-block;
+  position: relative;
+}
+
+/* Style pour la liste déroulante du sélecteur de langue */
+.langue-selector select {
+  padding: 8px; /* Espacement intérieur de la liste déroulante */
+  font-size: 16px; /* Taille de police pour la liste déroulante */
+  border: 1px solid #ccc; /* Bordure de la liste déroulante */
+  border-radius: 4px; /* Coins arrondis de la liste déroulante */
+  background-color: #fff; /* Couleur de fond de la liste déroulante */
+  cursor: pointer;
+  appearance: none; /* Réinitialisation de l'apparence native pour un meilleur style sur certains navigateurs */
+  color: #333; /* Couleur du texte de la liste déroulante */
+}
+
+/* Style pour la flèche de la liste déroulante */
+.langue-selector select::after {
+  content: '\25BC'; /* Code Unicode pour une flèche vers le bas */
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Position de la flèche vers le bas */
+  transform: translateY(-50%);
+  font-size: 12px; /* Taille de police pour la flèche */
+}
+
+/* Style pour l'étiquette "Choisissez votre langue" du sélecteur de langue */
+.langue-selector p {
+  margin: 0 10px 0 0; /* Marge autour de l'étiquette */
+  display: inline;
 }

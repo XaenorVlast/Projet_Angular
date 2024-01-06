@@ -1,6 +1,9 @@
 <!-- Auteurs du code : Maxence MAYOLY, Loick GOMEZ, Clément CHARABOT, date : 7 janvier 2024 --->
 
-<table>
+<!--Tableau avec des pays et nombre de produits par pays-->
+
+<div class="d-flex align-items-center">
+<table class="country-table">
     <thead>
       <tr>
         <th>Pays</th>
@@ -8,516 +11,278 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td class="highlight">France</td><td><a href="https://world.openfoodfacts.org/country/france">1 000 342</a></td></tr>
-      <tr><td class="highlight">United States</td><td><a href="https://world.openfoodfacts.org/country/united-states">612 738</a></td></tr>
-      <tr><td>Spain</td><td><a href="https://world.openfoodfacts.org/country/spain">313 461</a></td></tr>
-      <tr><td>Germany</td><td><a href="https://world.openfoodfacts.org/country/germany">237 121 </a></td></tr>
-      <tr><td>Italy</td><td><a href="https://world.openfoodfacts.org/country/italy">234 924</a></td></tr>
-      <tr><td>United Kingdom</td><td><a href="https://world.openfoodfacts.org/country/united-kingdom">105 948 </a></td></tr>
-      <tr><td>Switzerland</td><td><a href="https://world.openfoodfacts.org/country/switzerland">89 198</a></td>
-      <tr><td>Canada</td><td><a href="https://world.openfoodfacts.org/country/canada">84 343</a></td></tr>
-      <tr><td>Belgium</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Ireland</td><td><a href="https://world.openfoodfacts.org/country/ireland">83 321</a></td></tr>
-      <tr><td>Australia</td><td><a href="https://world.openfoodfacts.org/country/australia">83 321</a></td></tr>
-      <tr><td>Netherlands</td><td><a href="https://world.openfoodfacts.org/country/netherlands">83 321</a></td></tr>
-      <tr><td>Poland</td><td><a href="https://world.openfoodfacts.org/country/poland">83 321</a></td></tr>
-      <tr><td>Russia</td><td><a href="https://world.openfoodfacts.org/country/russia">83 321</a></td></tr>
-      <tr><td>Portugal</td><td><a href="https://world.openfoodfacts.org/country/portugal">83 321</a></td></tr>
-      <tr><td>Romania</td><td><a href="https://world.openfoodfacts.org/country/romania">83 321</a></td></tr>
-      <tr><td>Brazil</td><td><a href="https://world.openfoodfacts.org/country/brazil">83 321</a></td></tr>
-      <tr><td>Austria</td><td><a href="https://world.openfoodfacts.org/country/austria">83 321</a></td></tr>
-      <tr><td>Mexico</td><td><a href="https://world.openfoodfacts.org/country/mexico">83 321</a></td></tr>
-      <tr><td>Morocco</td><td><a href="https://world.openfoodfacts.org/country/morocco">83 321</a></td></tr>
-      <tr><td>Sweden</td><td><a href="https://world.openfoodfacts.org/country/sweden">83 321</a></td></tr>
-      <tr><td>Luxembourg</td><td><a href="https://world.openfoodfacts.org/country/luxembourg">83 321</a></td></tr>
-      <tr><td>Bulgaria</td><td><a href="https://world.openfoodfacts.org/country/bulgaria">83 321</a></td></tr>
-      <tr><td>Czech Republic </td><td><a href="https://world.openfoodfacts.org/country/czech-republic ">83 321</a></td></tr>
-      <tr><td>Argentina</td><td><a href="https://world.openfoodfacts.org/country/argentina">83 321</a></td></tr>
-      <tr><td>Finland</td><td><a href="https://world.openfoodfacts.org/country/finland">83 321</a></td></tr>
-      <tr><td>Norway</td><td><a href="https://world.openfoodfacts.org/country/norway">83 321</a></td></tr>
-      <tr><td>World</td><td><a href="https://world.openfoodfacts.org/country/world">83 321</a></td></tr>
-      <tr><td>Japan</td><td><a href="https://world.openfoodfacts.org/country/japan">83 321</a></td></tr>
-      <tr><td>India</td><td><a href="https://world.openfoodfacts.org/country/india">83 321</a></td></tr>
-      <tr><td>Thailand</td><td><a href="https://world.openfoodfacts.org/country/thailand">83 321</a></td></tr>
-      <tr><td>Hungary</td><td><a href="https://world.openfoodfacts.org/country/hungary">83 321</a></td></tr>
-      <tr><td>Denmark</td><td><a href="https://world.openfoodfacts.org/country/denmark">83 321</a></td></tr>
-      <tr><td>Algeria</td><td><a href="https://world.openfoodfacts.org/country/algeria">83 321</a></td></tr>
-      <tr><td>Lithuania</td><td><a href="https://world.openfoodfacts.org/country/lithuania">83 321</a></td></tr>
-      <tr><td>Reunion</td><td><a href="https://world.openfoodfacts.org/country/reunion">83 321</a></td></tr>
-      <tr><td>New Zealand</td><td><a href="https://world.openfoodfacts.org/country/new-zealand">83 321</a></td></tr>
-      <tr><td>Singapore</td><td><a href="https://world.openfoodfacts.org/country/singapore">83 321</a></td></tr>
-      <tr><td>Greece</td><td><a href="https://world.openfoodfacts.org/country/greece">83 321</a></td></tr>
-      <tr><td>Saudi Arabia</td><td><a href="https://world.openfoodfacts.org/country/saudi-arabia">83 321</a></td></tr>
-      <tr><td>Indonesia</td><td><a href="https://world.openfoodfacts.org/country/indonesia">83 321</a></td></tr>
-      <tr><td>Colombia</td><td><a href="https://world.openfoodfacts.org/country/colombia">83 321</a></td></tr>
-      <tr><td>Croatia</td><td><a href="https://world.openfoodfacts.org/country/croatia">83 321</a></td></tr>
-      <tr><td>Chile</td><td><a href="https://world.openfoodfacts.org/country/chile">83 321</a></td></tr>
-      <tr><td>South Africa</td><td><a href="https://world.openfoodfacts.org/country/south-africa">83 321</a></td></tr>
-      <tr><td>Philippines</td><td><a href="https://world.openfoodfacts.org/country/philippines">83 321</a></td></tr>
-      <tr><td>Bolivia</td><td><a href="https://world.openfoodfacts.org/country/bolivia">83 321</a></td></tr>
-      <tr><td>United Arab Emirates</td><td><a href="https://world.openfoodfacts.org/country/united-arab-emirates">83 321</a></td></tr>
-      <tr><td>Turkey</td><td><a href="https://world.openfoodfacts.org/country/turkey">83 321</a></td></tr>
-      <tr><td>New Caledonia</td><td><a href="https://world.openfoodfacts.org/country/new-caledonia">83 321</a></td></tr>
-      <tr><td>Tunisia</td><td><a href="https://world.openfoodfacts.org/country/tunisia">83 321</a></td></tr>
-      <tr><td>Puerto Rico</td><td><a href="https://world.openfoodfacts.org/country/puerto-rico">83 321</a></td></tr>
-      <tr><td>Slovakia</td><td><a href="https://world.openfoodfacts.org/country/slovakia">83 321</a></td></tr>
-      <tr><td>Serbia</td><td><a href="https://world.openfoodfacts.org/country/serbia">83 321</a></td></tr>
-      <tr><td>Israel</td><td><a href="https://world.openfoodfacts.org/country/israel">83 321</a></td></tr>
-      <tr><td>Malaysia</td><td><a href="https://world.openfoodfacts.org/country/malaysia">83 321</a></td></tr>
-      <tr><td>Ukraine</td><td><a href="https://world.openfoodfacts.org/country/ukraine">83 321</a></td></tr>
-      <tr><td>French Polynesia</td><td><a href="https://world.openfoodfacts.org/country/french-polynesia">83 321</a></td></tr>
-      <tr><td>Guadeloupe</td><td><a href="https://world.openfoodfacts.org/country/guadeloupe">83 321</a></td></tr>
-      <tr><td>Egypt</td><td><a href="https://world.openfoodfacts.org/country/egypt">83 321</a></td></tr>
-      <tr><td>Hong Kong</td><td><a href="https://world.openfoodfacts.org/country/hong-kong">83 321</a></td></tr>
-      <tr><td>Lebanon</td><td><a href="https://world.openfoodfacts.org/country/lebanon">83 321</a></td></tr>
-      <tr><td>Slovenia</td><td><a href="https://world.openfoodfacts.org/country/slovenia">83 321</a></td></tr>
-      <tr><td>Iraq</td><td><a href="https://world.openfoodfacts.org/country/iraq">83 321</a></td></tr>
-      <tr><td>Qatar</td><td><a href="https://world.openfoodfacts.org/country/qatar">83 321</a></td></tr>
-      <tr><td>Peru</td><td><a href="https://world.openfoodfacts.org/country/peru">83 321</a></td></tr>
-      <tr><td>Martinique</td><td><a href="https://world.openfoodfacts.org/country/martinique">83 321</a></td></tr>
-      <tr><td>Costa Rica</td><td><a href="https://world.openfoodfacts.org/country/costa-rica">83 321</a></td></tr>
-      <tr><td>Senegal</td><td><a href="https://world.openfoodfacts.org/country/senegal">83 321</a></td></tr>
-      <tr><td>Georgia</td><td><a href="https://world.openfoodfacts.org/country/georgia">83 321</a></td></tr>
-      <tr><td>Deutschland</td><td><a href="https://world.openfoodfacts.org/country/deutschland">83 321</a></td></tr>
-      <tr><td>Latvia</td><td><a href="https://world.openfoodfacts.org/country/latvia">83 321</a></td></tr>
-      <tr><td>Cyprus</td><td><a href="https://world.openfoodfacts.org/country/cyprus">83 321</a></td></tr>
-      <tr><td>Mauritus</td><td><a href="https://world.openfoodfacts.org/country/mauritus">83 321</a></td></tr>
-      <tr><td>Cote d'Ivoire</td><td><a href="https://world.openfoodfacts.org/country/cote-d'ivoire">83 321</a></td></tr>
-      <tr><td>Dominican Republic </td><td><a href="https://world.openfoodfacts.org/country/dominican-republic ">83 321</a></td></tr>
-      <tr><td>Panama</td><td><a href="https://world.openfoodfacts.org/country/panama">83 321</a></td></tr>
-      <tr><td>Malta</td><td><a href="https://world.openfoodfacts.org/country/malta">83 321</a></td></tr>
-      <tr><td>China</td><td><a href="https://world.openfoodfacts.org/country/china">83 321</a></td></tr>
-      <tr><td>Venezuela</td><td><a href="https://world.openfoodfacts.org/country/venezuela">83 321</a></td></tr>
-      <tr><td>Uruguay</td><td><a href="https://world.openfoodfacts.org/country/uruguay">83 321</a></td></tr>
-      <tr><td>Andorra</td><td><a href="https://world.openfoodfacts.org/country/andorra">83 321</a></td></tr>
-      <tr><td>Ecuador</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>South Korea</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Pakistan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Estonia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Paraguay</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Vietnam</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Albania</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Moldova</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>El Salvador</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Cuba</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>North Macedonia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Bosnia and Herzegovina</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Jordan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Belarus</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>francia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Guatemala</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Palestine</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Iceland</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Libya</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Frankreich</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Taiwan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Cameroon</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Iran</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Honduras</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Bahrain</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Jamaica</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>French Guinea</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Faroe Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Nigeria</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Virgin Islands of the United States</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Kazakhstan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Cambodia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Madagascar</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Bangladesh</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Uzbekistan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Montenegro</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Kenya</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Gabon</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Yugoslavia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Congo</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Monaco</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Burkina Faso</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Brunei</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:francia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Trinidad and Tobago</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Ghana</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Oman</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>European Union</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Mongolia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Nicaragua</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Gibraltar</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>schweiz</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Afghanistan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Ethiopia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Mali</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Somalia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Azerbaijan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Sri Lanka</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>belgique</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Barbados</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Suriname</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Saint Pierre and Miquelon</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Guam</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Armenia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>en</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Nepal</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Haiti</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Maldives</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Jersey</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Guinea</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Benin</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>The Bahamas</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Togo</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Aland Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:angleterre</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Republic of the Congo</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>republic-of-macedonia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Isle of Man</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Yemen</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Kyrgyzstan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Guyana</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Liechtenstein</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Curaçao</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Papua New Guinea</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>nederland</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Syria</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>San Marino</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Mauritania</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>suisse</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Niger</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Aruba</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Zambia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Macau</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Myanmar</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>francia-espana</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:frankreich</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>nl:belgie</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Mayotte</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Mozambique</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Nambia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Seychelles</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Bermuda</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Djibouti</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Angola</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Tanzania</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Guernsey</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Saint Lucia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>espagne</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ישראל</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>maroc</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Rwanda</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Sierra Leone</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Fiji</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Kosovo</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>allemagne</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Montserrat</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Saint-Martin</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Antigua and Barbuda</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Cape Verde</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>belgie</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>worldwide</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Laos</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>American Samoa</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Sudan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Zimbabwe</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>algerie</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>belgien</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>england</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Vanuatu</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>irland</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Chad</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:angle</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ru:nyl</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Uganda</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Sint Maarten</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>frankrijk</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Belize</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Botswana</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:international</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Comoros</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Malawi</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>alemania</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Cayman Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Wallis and Futuna</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Liberia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Saint Vincent and the Grenadines</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>belgica</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>British Virgin Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>royaume-uni</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>spanien</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>sverige</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Tajikstan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:deutschland</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>niederlande</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Republika Srpska</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>suiza</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Equatorial Guinea</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:dom-tom</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Nothern Mariana Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Anguilla</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>es:cantabria</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Burundi</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>нидерланды</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:belgica</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:schweiz</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>france-spain</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>polska</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Dominica</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>estados-unidos</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Caribbean Netherlands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>日本</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>benelux</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>česko</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>East Germany</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Turks and Caicos Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Gambia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>es:santona</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:belgien</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>la-reunion</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Grenada</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Bhutan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>North Korea</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>reino-unido</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ελλάδα</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Central African Republic</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>South Sudan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Palau</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>vereinigte-staaten-von-amerika</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Swaziland</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>българия</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>en-us</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Saint Kitts and Nevis</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>State of Palestine</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Cook Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Iraqi Kurdistan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>dom-tom</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>hrvatska</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>etats-unis</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:en-fr</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Greenland</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>scotland</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>المغرب</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Soviet Union</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:suiza</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>السعودية</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Galmudug</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>franța</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Vatican City</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Eritrea</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>الاردن</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>unknown</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>United States Minor Outlying Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>peru-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ca:franca</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>de:españa</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>el:ελλαδα</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>argentina-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>armenia-pyсский</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>aruba-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>asia-pacific</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>australia-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>austria-deutsch</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>azerbaijan-русский</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>belarus-pyсский</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>belgium-francais</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>belgium-nederlands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>bolivia-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Bonaire/td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>bosnia-i-hercegovina-bosnian</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>botswana-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>brazil-portugues</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>British Indian Ocean Territory</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>bulgaria-български</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>cambodia-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>cambodia-ភាសាខ្មែរ</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>canada-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>canada-francais</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>chile-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>china-中文</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Cocos (Keeling) Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>colombia-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>costa-rica-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>croatia-hrvatski</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>cyprus-ελληνικά</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>czech-republic-čeština</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>denmark-dansk</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ecuador-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>el-salvador-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>estonia-eesti</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>europe</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>finland-suomi</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>france-francais</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>france-switzerland-germany</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>georgia-ქართული</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>germany-deutsch</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ghana-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>greece-ελληνικά</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>guatemala-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>honduras-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>hong-kong-粵語</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>hungary-magyar</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>iceland-islenska</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>india-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>indian-subcontinent</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>indonesia-bahasa-indonesia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ireland-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>israel-עברית</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>italy-italiano</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>jamaica-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>japan-日本語</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>kazakhstan-pyсский</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>korea-한국어</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>kyrgyzstan-русский</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>latvia-latviešu</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>lebanon-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Lesotho</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>lesotho-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>lithuania-lietuvių</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>macau-中文</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>malaysia-bahasa-melayu</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>malaysia-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>malaysia-中文</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Marshall Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>mexico-espana</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>mexico-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>middle-east</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>middle-east-africa</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>moldova-roman</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>mongolia-монгол-хэл</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>namibia-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>netherlands-nederlands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>new-zealand-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>nicaragua-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>north-macedonia-македонски-јазик</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>norway-norsk</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>panama-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>paraguay-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>philippines-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>poland-polski</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>portugal-portugues</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>puerto-rico-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>republica-dominicana-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>romania-romană</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>russia-русский</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Samoa</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Sao Tomé and Príncipe</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>serbia-srpski</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>singapore-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Sint Eustatius</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>slovak-republic-slovenčina</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>slovenia-slovene</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>south-africa-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>spain-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>swaziland-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>sweden-svenska</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>switzerland-deutsch</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>switzerland-francais</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>taiwan-中文</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>thailand-ไทย</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Timor-Leste</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>trinidad-tobago-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>turkey-turkce</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ukraine-yкраї́нська</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>united-kingdom-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>united-states-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>united-states-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>uruguay-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>venezuela-espanol</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>vietnam-tiếng-việt</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>zambia-english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>франция</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>الجزائر</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>العراق</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>اليمن</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ایران</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>جميع-البلدان</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ليبيا</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>대한민국</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>�</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ru:снг</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>lidl</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ks</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:فرنسا</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>kerns</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>km:drhjg</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ar:جميع-محافظات-مصر</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>kakakakkakslskk</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>jegrj</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>januray</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>nl:frank</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Jan Mayen</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>value-iran</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>j</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>indomie</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>india-sikkim</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>nl:moldavie</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ikram</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>holandia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>nl:roemenie</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>hiszpania</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>vjf</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>heywood</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>west-africa</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>germania</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>francja</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>english</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>en-portugal</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>en-p-r-c</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>pt:amapa-pracuuba</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>en-morocco</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>en-en-en-en-en-en-en-malaysia</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>švedska</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>švicarska</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>en-en-en-en-bulgaria</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>dszvxz</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Christmas Island</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ro:republica-cehă</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>central-america</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>canada-s</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ro:ue</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>brazil-en-france</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ar:تونس</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>bhjj</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>zh:英國</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>امريكاء</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>sk:německo</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ta:jeddah</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>batcrloj</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ta:k</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>zh:美國</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>asdasda</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>es:latinoamerica</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Ascension Island</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>andria</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>andorra-francia-portugal-espana</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>and-saba</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>algerie-en-algeria</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>alabama-nagysziget</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ail-food-market</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>9ш</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>swisslan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>suede</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>3-4</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>spain-england-scotland-wales-northern-ireland</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>South Georgia and the South Sandwich Islands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>shyyw</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>123456789</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>rob</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>el:κύπρο</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ar:100</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Tonga</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>paylaş</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>fr:marruecos</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>niemcy</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>nederlands</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>bg:бйлгария</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>turkiye</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Turkmenistan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>Nauru</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>n</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>ugk</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>mad</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-      <tr><td>az:azerbaycan</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 321</a></td></tr>
-
-
-
-
+      <tr><td class="highlight country-column">France</td><td><a href="https://world.openfoodfacts.org/country/france">1 000 585</a></td></tr>
+      <tr><td class="highlight country-column">United States</td><td><a href="https://world.openfoodfacts.org/country/united-states">612 761</a></td></tr>
+      <tr><td class="highlight country-column">Spain</td><td><a href="https://world.openfoodfacts.org/country/spain">313 478</a></td></tr>
+      <tr><td class="highlight country-column">Germany</td><td><a href="https://world.openfoodfacts.org/country/germany">237 373 </a></td></tr>
+      <tr><td class="highlight country-column">Italy</td><td><a href="https://world.openfoodfacts.org/country/italy">234 958</a></td></tr>
+      <tr><td class="highlight country-column">United Kingdom</td><td><a href="https://world.openfoodfacts.org/country/united-kingdom">106639</a></td></tr>
+      <tr><td class="highlight country-column">Switzerland</td><td><a href="https://world.openfoodfacts.org/country/switzerland">89 215</a></td>
+      <tr><td class="highlight country-column">Canada</td><td><a href="https://world.openfoodfacts.org/country/canada">84 347</a></td></tr>
+      <tr><td class="highlight country-column">Belgium</td><td><a href="https://world.openfoodfacts.org/country/belgium">83 320</a></td></tr>
+      <tr><td class="highlight country-column">Ireland</td><td><a href="https://world.openfoodfacts.org/country/ireland">46 264</a></td></tr>
+      <tr><td class="highlight country-column">Australia</td><td><a href="https://world.openfoodfacts.org/country/australia">40 098</a></td></tr>
+      <tr><td class="highlight country-column">Netherlands</td><td><a href="https://world.openfoodfacts.org/country/netherlands">18 113</a></td></tr>
+      <tr><td class="highlight country-column">Poland</td><td><a href="https://world.openfoodfacts.org/country/poland">14 740</a></td></tr>
+      <tr><td class="highlight country-column">Russia</td><td><a href="https://world.openfoodfacts.org/country/russia">12 714</a></td></tr>
+      <tr><td class="highlight country-column">Portugal</td><td><a href="https://world.openfoodfacts.org/country/portugal">12 343</a></td></tr>
+      <tr><td class="highlight country-column">Romania</td><td><a href="https://world.openfoodfacts.org/country/romania">11 817</a></td></tr>
+      <tr><td class="highlight country-column">Brazil</td><td><a href="https://world.openfoodfacts.org/country/brazil">11 397</a></td></tr>
+      <tr><td class="highlight country-column">Austria</td><td><a href="https://world.openfoodfacts.org/country/austria">11 238</a></td></tr>
+      <tr><td class="highlight country-column">Mexico</td><td><a href="https://world.openfoodfacts.org/country/mexico">9496</a></td></tr>
+      <tr><td class="highlight country-column">Morocco</td><td><a href="https://world.openfoodfacts.org/country/morocco">9088</a></td></tr>
+      <tr><td class="highlight country-column">Sweden</td><td><a href="https://world.openfoodfacts.org/country/sweden">8684</a></td></tr>
+      <tr><td class="highlight country-column">Luxembourg</td><td><a href="https://world.openfoodfacts.org/country/luxembourg">8185</a></td></tr>
+      <tr><td class="highlight country-column">Bulgaria</td><td><a href="https://world.openfoodfacts.org/country/bulgaria">8031</a></td></tr>
+      <tr><td class="highlight country-column">Czech Republic </td><td><a href="https://world.openfoodfacts.org/country/czech-republic ">7996</a></td></tr>
+      <tr><td class="highlight country-column">Argentina</td><td><a href="https://world.openfoodfacts.org/country/argentina">7079</a></td></tr>
+      <tr><td class="highlight country-column">Finland</td><td><a href="https://world.openfoodfacts.org/country/finland">6518</a></td></tr>
+      <tr><td class="highlight country-column">Norway</td><td><a href="https://world.openfoodfacts.org/country/norway">6256</a></td></tr>
+      <tr><td class="highlight country-column">World</td><td><a href="https://world.openfoodfacts.org/country/world">5869</a></td></tr>
+      <tr><td class="highlight country-column">Japan</td><td><a href="https://world.openfoodfacts.org/country/japan">5849</a></td></tr>
+      <tr><td class="highlight country-column">India</td><td><a href="https://world.openfoodfacts.org/country/india">5804</a></td></tr>
+      <tr><td class="highlight country-column">Thailand</td><td><a href="https://world.openfoodfacts.org/country/thailand">5751</a></td></tr>
+      <tr><td class="highlight country-column">Hungary</td><td><a href="https://world.openfoodfacts.org/country/hungary">5499</a></td></tr>
+      <tr><td class="highlight country-column">Denmark</td><td><a href="https://world.openfoodfacts.org/country/denmark">4765</a></td></tr>
+      <tr><td class="highlight country-column">Algeria</td><td><a href="https://world.openfoodfacts.org/country/algeria">4706</a></td></tr>
+      <tr><td class="highlight country-column">Lithuania</td><td><a href="https://world.openfoodfacts.org/country/lithuania">4339</a></td></tr>
+      <tr><td class="highlight country-column">Reunion</td><td><a href="https://world.openfoodfacts.org/country/reunion">4129</a></td></tr>
+      <tr><td class="highlight country-column">New Zealand</td><td><a href="https://world.openfoodfacts.org/country/new-zealand">3986</a></td></tr>
+      <tr><td class="highlight country-column">Singapore</td><td><a href="https://world.openfoodfacts.org/country/singapore">3634</a></td></tr>
+      <tr><td class="highlight country-column">Greece</td><td><a href="https://world.openfoodfacts.org/country/greece">3467</a></td></tr>
+      <tr><td class="highlight country-column">Saudi Arabia</td><td><a href="https://world.openfoodfacts.org/country/saudi-arabia">3244</a></td></tr>
+      <tr><td class="highlight country-column">Indonesia</td><td><a href="https://world.openfoodfacts.org/country/indonesia">3157</a></td></tr>
+      <tr><td class="highlight country-column">Colombia</td><td><a href="https://world.openfoodfacts.org/country/colombia">3082</a></td></tr>
+      <tr><td class="highlight country-column">Croatia</td><td><a href="https://world.openfoodfacts.org/country/croatia">3067</a></td></tr>
+      <tr><td class="highlight country-column">Chile</td><td><a href="https://world.openfoodfacts.org/country/chile">3045</a></td></tr>
+      <tr><td class="highlight country-column">South Africa</td><td><a href="https://world.openfoodfacts.org/country/south-africa">2944</a></td></tr>
+      <tr><td class="highlight country-column">Philippines</td><td><a href="https://world.openfoodfacts.org/country/philippines">2850</a></td></tr>
+      <tr><td class="highlight country-column">Bolivia</td><td><a href="https://world.openfoodfacts.org/country/bolivia">2729</a></td></tr>
+      <tr><td class="highlight country-column">United Arab Emirates</td><td><a href="https://world.openfoodfacts.org/country/united-arab-emirates">2549</a></td></tr>
+      <tr><td class="highlight country-column">Turkey</td><td><a href="https://world.openfoodfacts.org/country/turkey">2510</a></td></tr>
+      <tr><td class="highlight country-column">New Caledonia</td><td><a href="https://world.openfoodfacts.org/country/new-caledonia">2506</a></td></tr>
+      <tr><td class="highlight country-column">Tunisia</td><td><a href="https://world.openfoodfacts.org/country/tunisia">2467</a></td></tr>
+      <tr><td class="highlight country-column">Puerto Rico</td><td><a href="https://world.openfoodfacts.org/country/puerto-rico">2451</a></td></tr>
+      <tr><td class="highlight country-column">Slovakia</td><td><a href="https://world.openfoodfacts.org/country/slovakia">2279</a></td></tr>
+      <tr><td class="highlight country-column">Serbia</td><td><a href="https://world.openfoodfacts.org/country/serbia">2166</a></td></tr>
+      <tr><td class="highlight country-column">Israel</td><td><a href="https://world.openfoodfacts.org/country/israel">1990</a></td></tr>
+      <tr><td class="highlight country-column">Malaysia</td><td><a href="https://world.openfoodfacts.org/country/malaysia">1979</a></td></tr>
+      <tr><td class="highlight country-column">Ukraine</td><td><a href="https://world.openfoodfacts.org/country/ukraine">1893</a></td></tr>
+      <tr><td class="highlight country-column">French Polynesia</td><td><a href="https://world.openfoodfacts.org/country/french-polynesia">1825</a></td></tr>
+      <tr><td class="highlight country-column">Guadeloupe</td><td><a href="https://world.openfoodfacts.org/country/guadeloupe">1718</a></td></tr>
+      <tr><td class="highlight country-column">Egypt</td><td><a href="https://world.openfoodfacts.org/country/egypt">1548</a></td></tr>
+      <tr><td class="highlight country-column">Kuwait</td><td><a href="https://world.openfoodfacts.org/country/kuwait">1539</a></td></tr>
+      <tr><td class="highlight country-column">Hong Kong</td><td><a href="https://world.openfoodfacts.org/country/hong-kong">1516</a></td></tr>
+      <tr><td class="highlight country-column">Lebanon</td><td><a href="https://world.openfoodfacts.org/country/lebanon">1475</a></td></tr>
+      <tr><td class="highlight country-column">Slovenia</td><td><a href="https://world.openfoodfacts.org/country/slovenia">1437</a></td></tr>
+      <tr><td class="highlight country-column">Iraq</td><td><a href="https://world.openfoodfacts.org/country/iraq">1432</a></td></tr>
+      <tr><td class="highlight country-column">Qatar</td><td><a href="https://world.openfoodfacts.org/country/qatar">1407</a></td></tr>
+      <tr><td class="highlight country-column">Peru</td><td><a href="https://world.openfoodfacts.org/country/peru">1385</a></td></tr>
+      <tr><td class="highlight country-column">Martinique</td><td><a href="https://world.openfoodfacts.org/country/martinique">1215</a></td></tr>
+      <tr><td class="highlight country-column">Costa Rica</td><td><a href="https://world.openfoodfacts.org/country/costa-rica">1150</a></td></tr>
+      <tr><td class="highlight country-column">Senegal</td><td><a href="https://world.openfoodfacts.org/country/senegal">1135</a></td></tr>
+      <tr><td class="highlight country-column">Georgia</td><td><a href="https://world.openfoodfacts.org/country/georgia">1069</a></td></tr>
+      <tr><td class="highlight country-column">Deutschland</td><td><a href="https://world.openfoodfacts.org/country/deutschland">1056</a></td></tr>
+      <tr><td class="highlight country-column">Latvia</td><td><a href="https://world.openfoodfacts.org/country/latvia">1034</a></td></tr>
+      <tr><td class="highlight country-column">Cyprus</td><td><a href="https://world.openfoodfacts.org/country/cyprus">1012</a></td></tr>
+      <tr><td class="highlight country-column">Mauritus</td><td><a href="https://world.openfoodfacts.org/country/mauritus">989</a></td></tr>
+      <tr><td class="highlight country-column">Cote d'Ivoire</td><td><a href="https://world.openfoodfacts.org/country/cote-d'ivoire">986</a></td></tr>
+      <tr><td class="highlight country-column">Dominican Republic </td><td><a href="https://world.openfoodfacts.org/country/dominican-republic ">961</a></td></tr>
+      <tr><td class="highlight country-column">Panama</td><td><a href="https://world.openfoodfacts.org/country/panama">932</a></td></tr>
+      <tr><td class="highlight country-column">Malta</td><td><a href="https://world.openfoodfacts.org/country/malta">8924</a></td></tr>
+      <tr><td class="highlight country-column">China</td><td><a href="https://world.openfoodfacts.org/country/china">900</a></td></tr>
+      <tr><td class="highlight country-column">Venezuela</td><td><a href="https://world.openfoodfacts.org/country/venezuela">886</a></td></tr>
+      <tr><td class="highlight country-column">Uruguay</td><td><a href="https://world.openfoodfacts.org/country/uruguay">882</a></td></tr>
+      <tr><td class="highlight country-column">Andorra</td><td><a href="https://world.openfoodfacts.org/country/andorra">868</a></td></tr>
+      <tr><td class="highlight country-column">Ecuador</td><td><a href="https://world.openfoodfacts.org/country/ecuador">862</a></td></tr>
+      <tr><td class="highlight country-column">South Korea</td><td><a href="https://world.openfoodfacts.org/country/south-korea">838</a></td></tr>
+      <tr><td class="highlight country-column">Pakistan</td><td><a href="https://world.openfoodfacts.org/country/pakistan">778</a></td></tr>
+      <tr><td class="highlight country-column">Estonia</td><td><a href="https://world.openfoodfacts.org/country/estonia">739</a></td></tr>
+      <tr><td class="highlight country-column">Paraguay</td><td><a href="https://world.openfoodfacts.org/country/paraguay">723</a></td></tr>
+      <tr><td class="highlight country-column">Vietnam</td><td><a href="https://world.openfoodfacts.org/country/vietnam">689</a></td></tr>
+      <tr><td class="highlight country-column">Albania</td><td><a href="https://world.openfoodfacts.org/country/albania">653</a></td></tr>
+      <tr><td class="highlight country-column">Moldova</td><td><a href="https://world.openfoodfacts.org/country/moldova">652</a></td></tr>
+      <tr><td class="highlight country-column">El Salvador</td><td><a href="https://world.openfoodfacts.org/country/el-salvador">642</a></td></tr>
+      <tr><td class="highlight country-column">Cuba</td><td><a href="https://world.openfoodfacts.org/country/cuba">609</a></td></tr>
+      <tr><td class="highlight country-column">North Macedonia</td><td><a href="https://world.openfoodfacts.org/country/north-macedonia">593</a></td></tr>
+      <tr><td class="highlight country-column">Bosnia and Herzegovina</td><td><a href="https://world.openfoodfacts.org/country/bosnia-and-herzegovina">580</a></td></tr>
+      <tr><td class="highlight country-column">Jordan</td><td><a href="https://world.openfoodfacts.org/country/jordan">562</a></td></tr>
+      <tr><td class="highlight country-column">Belarus</td><td><a href="https://world.openfoodfacts.org/country/belarus">530</a></td></tr>
+      <tr><td class="highlight country-column">Guatemala</td><td><a href="https://world.openfoodfacts.org/country/guatemala">514</a></td></tr>
+      <tr><td class="highlight country-column">Palestinian territories</td><td><a href="https://world.openfoodfacts.org/country/palestinian-territories">512</a></td></tr>
+      <tr><td class="highlight country-column">Iceland</td><td><a href="https://world.openfoodfacts.org/country/iceland">510</a></td></tr>
+      <tr><td class="highlight country-column">Libya</td><td><a href="https://world.openfoodfacts.org/country/libya">487</a></td></tr>
+      <tr><td class="highlight country-column">Taiwan</td><td><a href="https://world.openfoodfacts.org/country/taiwan">468</a></td></tr>
+      <tr><td class="highlight country-column">Cameroon</td><td><a href="https://world.openfoodfacts.org/country/cameroon">462</a></td></tr>
+      <tr><td class="highlight country-column">Iran</td><td><a href="https://world.openfoodfacts.org/country/iran">452</a></td></tr>
+      <tr><td class="highlight country-column">Honduras</td><td><a href="https://world.openfoodfacts.org/country/honduras">434</a></td></tr>
+      <tr><td class="highlight country-column">Bahrain</td><td><a href="https://world.openfoodfacts.org/country/bahrain">432</a></td></tr>
+      <tr><td class="highlight country-column">Jamaica</td><td><a href="https://world.openfoodfacts.org/country/jamaica">412</a></td></tr>
+      <tr><td class="highlight country-column">French Guiana</td><td><a href="https://world.openfoodfacts.org/country/french-guiana">404</a></td></tr>
+      <tr><td class="highlight country-column">Faroe Islands</td><td><a href="https://world.openfoodfacts.org/country/faroe-islands">403</a></td></tr>
+      <tr><td class="highlight country-column">Nigeria</td><td><a href="https://world.openfoodfacts.org/country/nigeria">391</a></td></tr>
+      <tr><td class="highlight country-column">Virgin Islands of the United States</td><td><a href="https://world.openfoodfacts.org/country/virgin-islands-of-the-united-states">381</a></td></tr>
+      <tr><td class="highlight country-column">Cambodia</td><td><a href="https://world.openfoodfacts.org/country/cambodia">363</a></td></tr>
+      <tr><td class="highlight country-column">Kazakhstan</td><td><a href="https://world.openfoodfacts.org/country/kazakhstan">363</a></td></tr>
+      <tr><td class="highlight country-column">Bangladesh</td><td><a href="https://world.openfoodfacts.org/country/bangladesh">353</a></td></tr>
+      <tr><td class="highlight country-column">Madagascar</td><td><a href="https://world.openfoodfacts.org/country/madagascar">353</a></td></tr>
+      <tr><td class="highlight country-column">Uzbekistan</td><td><a href="https://world.openfoodfacts.org/country/uzbekistan">335</a></td></tr>
+      <tr><td class="highlight country-column">Montenegro</td><td><a href="https://world.openfoodfacts.org/country/montenegro">325</a></td></tr>
+      <tr><td class="highlight country-column">Kenya</td><td><a href="https://world.openfoodfacts.org/country/kenya">312</a></td></tr>
+      <tr><td class="highlight country-column">Gabon</td><td><a href="https://world.openfoodfacts.org/country/gabon">279</a></td></tr>
+      <tr><td class="highlight country-column">Yugoslavia</td><td><a href="https://world.openfoodfacts.org/country/yugoslavia">277</a></td></tr>
+      <tr><td class="highlight country-column">Congo</td><td><a href="https://world.openfoodfacts.org/country/democratic-republic-of-the-congo">269</a></td></tr>
+      <tr><td class="highlight country-column">Monaco</td><td><a href="https://world.openfoodfacts.org/country/monaco">267</a></td></tr>
+      <tr><td class="highlight country-column">Burkina Faso</td><td><a href="https://world.openfoodfacts.org/country/burkina-faso">265</a></td></tr>
+      <tr><td class="highlight country-column">Brunei</td><td><a href="https://world.openfoodfacts.org/country/brunei">255</a></td></tr>
+      <tr><td class="highlight country-column">Trinidad and Tobago</td><td><a href="https://world.openfoodfacts.org/country/trinidad-and-tobago">237</a></td></tr>
+      <tr><td class="highlight country-column">Ghana</td><td><a href="https://world.openfoodfacts.org/country/ghana">230</a></td></tr>
+      <tr><td class="highlight country-column">Oman</td><td><a href="https://world.openfoodfacts.org/country/oman">230</a></td></tr>
+      <tr><td class="highlight country-column">European Union</td><td><a href="https://world.openfoodfacts.org/country/european-union">225</a></td></tr>
+      <tr><td class="highlight country-column">Mongolia</td><td><a href="https://world.openfoodfacts.org/country/mongolia">222</a></td></tr>
+      <tr><td class="highlight country-column">Nicaragua</td><td><a href="https://world.openfoodfacts.org/country/nicaragua">205</a></td></tr>
+      <tr><td class="highlight country-column">Gibraltar</td><td><a href="https://world.openfoodfacts.org/country/gibraltar">204</a></td></tr>
+      <tr><td class="highlight country-column">Afghanistan</td><td><a href="https://world.openfoodfacts.org/country/afghanistan">200</a></td></tr>
+      <tr><td class="highlight country-column">Ethiopia</td><td><a href="https://world.openfoodfacts.org/country/ethiopia">198</a></td></tr>
+      <tr><td class="highlight country-column">Mali</td><td><a href="https://world.openfoodfacts.org/country/mali">187</a></td></tr>
+      <tr><td class="highlight country-column">Somalia</td><td><a href="https://world.openfoodfacts.org/country/somalia">186</a></td></tr>
+      <tr><td class="highlight country-column">Azerbaijan</td><td><a href="https://world.openfoodfacts.org/country/azerbaijan">186</a></td></tr>
+      <tr><td class="highlight country-column">Sri Lanka</td><td><a href="https://world.openfoodfacts.org/country/sri-lanka">176</a></td></tr>
+      <tr><td class="highlight country-column">Barbados</td><td><a href="https://world.openfoodfacts.org/country/barbados">165</a></td></tr>
+      <tr><td class="highlight country-column">Suriname</td><td><a href="https://world.openfoodfacts.org/country/suriname">162</a></td></tr>
+      <tr><td class="highlight country-column">Saint Pierre and Miquelon</td><td><a href="https://world.openfoodfacts.org/country/saint-pierre-and-miquelon">161</a></td></tr>
+      <tr><td class="highlight country-column">Guam</td><td><a href="https://world.openfoodfacts.org/country/guam">159</a></td></tr>
+      <tr><td class="highlight country-column">Armenia</td><td><a href="https://world.openfoodfacts.org/country/armenia">158</a></td></tr>
+      <tr><td class="highlight country-column">Nepal</td><td><a href="https://world.openfoodfacts.org/country/nepal">147</a></td></tr>
+      <tr><td class="highlight country-column">Haiti</td><td><a href="https://world.openfoodfacts.org/country/haiti">147</a></td></tr>
+      <tr><td class="highlight country-column">Maldives</td><td><a href="https://world.openfoodfacts.org/country/maldives">138</a></td></tr>
+      <tr><td class="highlight country-column">Jersey</td><td><a href="https://world.openfoodfacts.org/country/jersey">131</a></td></tr>
+      <tr><td class="highlight country-column">Guinea</td><td><a href="https://world.openfoodfacts.org/country/guinea">129</a></td></tr>
+      <tr><td class="highlight country-column">Benin</td><td><a href="https://world.openfoodfacts.org/country/benin">129</a></td></tr>
+      <tr><td class="highlight country-column">The Bahamas</td><td><a href="https://world.openfoodfacts.org/country/the-bahamas">128</a></td></tr>
+      <tr><td class="highlight country-column">Togo</td><td><a href="https://world.openfoodfacts.org/country/togo">113</a></td></tr>
+      <tr><td class="highlight country-column">Aland Islands</td><td><a href="https://world.openfoodfacts.org/country/aland-islands">109</a></td></tr>
+      <tr><td class="highlight country-column">fr:angleterre</td><td><a href="https://world.openfoodfacts.org/country/fr:angleterre">103</a></td></tr>
+      <tr><td class="highlight country-column">Republic of the Congo</td><td><a href="https://world.openfoodfacts.org/country/republic-of-the-congo">100</a></td></tr>
+      <tr><td class="highlight country-column">republic-of-macedonia</td><td><a href="https://world.openfoodfacts.org/country/republic-of-macedonia">98</a></td></tr>
+      <tr><td class="highlight country-column">Isle of Man</td><td><a href="https://world.openfoodfacts.org/country/isle-of-man">97</a></td></tr>
+      <tr><td class="highlight country-column">Yemen</td><td><a href="https://world.openfoodfacts.org/country/yemen">97</a></td></tr>
+      <tr><td class="highlight country-column">Kyrgyzstan</td><td><a href="https://world.openfoodfacts.org/country/kyrgyzstan">97</a></td></tr>
+      <tr><td class="highlight country-column">Guyana</td><td><a href="https://world.openfoodfacts.org/country/guayana">94</a></td></tr>
+      <tr><td class="highlight country-column">Liechtenstein</td><td><a href="https://world.openfoodfacts.org/country/liechtenstein">94</a></td></tr>
+      <tr><td class="highlight country-column">Curaçao</td><td><a href="https://world.openfoodfacts.org/country/curaçao">93</a></td></tr>
+      <tr><td class="highlight country-column">Papua New Guinea</td><td><a href="https://world.openfoodfacts.org/country/papua-new-guinea">92</a></td></tr>
+      <tr><td class="highlight country-column">nederland</td><td><a href="https://world.openfoodfacts.org/country/nederland">91</a></td></tr>
+      <tr><td class="highlight country-column">Syria</td><td><a href="https://world.openfoodfacts.org/country/syria">90</a></td></tr>
+      <tr><td class="highlight country-column">Mauritania</td><td><a href="https://world.openfoodfacts.org/country/mauritania">89</a></td></tr>
+      <tr><td class="highlight country-column">San Marino</td><td><a href="https://world.openfoodfacts.org/country/san-marino">89</a></td></tr>
+      <tr><td class="highlight country-column">suisse</td><td><a href="https://world.openfoodfacts.org/country/suisse">87</a></td></tr>
+      <tr><td class="highlight country-column">Niger</td><td><a href="https://world.openfoodfacts.org/country/niger">86</a></td></tr>
+      <tr><td class="highlight country-column">Aruba</td><td><a href="https://world.openfoodfacts.org/country/aruba">79</a></td></tr>
+      <tr><td class="highlight country-column">Zambia</td><td><a href="https://world.openfoodfacts.org/country/zambia">78</a></td></tr>
+      <tr><td class="highlight country-column">Macau</td><td><a href="https://world.openfoodfacts.org/country/macau">75</a></td></tr>
+      <tr><td class="highlight country-column">Myanmar</td><td><a href="https://world.openfoodfacts.org/country/myanmar">71</a></td></tr>
+      <tr><td class="highlight country-column">Mayotte</td><td><a href="https://world.openfoodfacts.org/country/mayotte">64</a></td></tr>
+      <tr><td class="highlight country-column">Mozambique</td><td><a href="https://world.openfoodfacts.org/country/mozambique">64</a></td></tr>
+      <tr><td class="highlight country-column">Namibia</td><td><a href="https://world.openfoodfacts.org/country/namibia">61</a></td></tr>
+      <tr><td class="highlight country-column">Seychelles</td><td><a href="https://world.openfoodfacts.org/country/seychelles">58</a></td></tr>
+      <tr><td class="highlight country-column">Bermuda</td><td><a href="https://world.openfoodfacts.org/country/bermuda">57</a></td></tr>
+      <tr><td class="highlight country-column">Djibouti</td><td><a href="https://world.openfoodfacts.org/country/djibouti">56</a></td></tr>
+      <tr><td class="highlight country-column">Angola</td><td><a href="https://world.openfoodfacts.org/country/angola">56</a></td></tr>
+      <tr><td class="highlight country-column">Tanzania</td><td><a href="https://world.openfoodfacts.org/country/tanzania">55</a></td></tr>
+      <tr><td class="highlight country-column">Guernsey</td><td><a href="https://world.openfoodfacts.org/country/guernsey">54</a></td></tr>
+      <tr><td class="highlight country-column">Saint Lucia</td><td><a href="https://world.openfoodfacts.org/country/saint-lucia">53</a></td></tr>
+      <tr><td class="highlight country-column">espagne</td><td><a href="https://world.openfoodfacts.org/country/espagne">51</a></td></tr>
+      <tr><td class="highlight country-column">maroc</td><td><a href="https://world.openfoodfacts.org/country/maroc">49</a></td></tr>
+      <tr><td class="highlight country-column">Rwanda</td><td><a href="https://world.openfoodfacts.org/country/rwanda">49</a></td></tr>
+      <tr><td class="highlight country-column">Sierra Leone</td><td><a href="https://world.openfoodfacts.org/country/sierra-leone">46</a></td></tr>
+      <tr><td class="highlight country-column">Fiji</td><td><a href="https://world.openfoodfacts.org/country/fiji">45</a></td></tr>
+      <tr><td class="highlight country-column">Kosovo</td><td><a href="https://world.openfoodfacts.org/country/kosovo">45</a></td></tr>
+      <tr><td class="highlight country-column">allemagne</td><td><a href="https://world.openfoodfacts.org/country/allemagne">44</a></td></tr>
+      <tr><td class="highlight country-column">Montserrat</td><td><a href="https://world.openfoodfacts.org/country/montserrat">43</a></td></tr>
+      <tr><td class="highlight country-column">Saint-Martin</td><td><a href="https://world.openfoodfacts.org/country/saint-martin">43</a></td></tr>
+      <tr><td class="highlight country-column">Antigua and Barbuda</td><td><a href="https://world.openfoodfacts.org/country/antigua-and-barbuda">42</a></td></tr>
+      <tr><td class="highlight country-column">Cape Verde</td><td><a href="https://world.openfoodfacts.org/country/cape-verde">42</a></td></tr>
+      <tr><td class="highlight country-column">worldwide</td><td><a href="https://world.openfoodfacts.org/country/worldwide">38</a></td></tr>
+      <tr><td class="highlight country-column">Laos</td><td><a href="https://world.openfoodfacts.org/country/laos">38</a></td></tr>
+      <tr><td class="highlight country-column">American Samoa</td><td><a href="https://world.openfoodfacts.org/country/american-samoa">37</a></td></tr>
+      <tr><td class="highlight country-column">Sudan</td><td><a href="https://world.openfoodfacts.org/country/sudan">35</a></td></tr>
+      <tr><td class="highlight country-column">Zimbabwe</td><td><a href="https://world.openfoodfacts.org/country/zimbabwe">33</a></td></tr>
+      <tr><td class="highlight country-column">algerie</td><td><a href="https://world.openfoodfacts.org/country/algerie">33</a></td></tr>
+      <tr><td class="highlight country-column">belgien</td><td><a href="https://world.openfoodfacts.org/country/belgien">32</a></td></tr>
+      <tr><td class="highlight country-column">england</td><td><a href="https://world.openfoodfacts.org/country/england">31</a></td></tr>
+      <tr><td class="highlight country-column">Vanuatu</td><td><a href="https://world.openfoodfacts.org/country/vanuatu">31</a></td></tr>
+      <tr><td class="highlight country-column">irland</td><td><a href="https://world.openfoodfacts.org/country/irland">30</a></td></tr>
+      <tr><td class="highlight country-column">Chad</td><td><a href="https://world.openfoodfacts.org/country/chad">30</a></td></tr>
+      <tr><td class="highlight country-column">Uganda</td><td><a href="https://world.openfoodfacts.org/country/uganda">28</a></td></tr>
+      <tr><td class="highlight country-column">Sint Maarten</td><td><a href="https://world.openfoodfacts.org/country/sint-maarten">28</a></td></tr>
+      <tr><td class="highlight country-column">Belize</td><td><a href="https://world.openfoodfacts.org/country/belize">26</a></td></tr>
+      <tr><td class="highlight country-column">Botswana</td><td><a href="https://world.openfoodfacts.org/country/botswana">25</a></td></tr>
+      <tr><td class="highlight country-column">Comoros</td><td><a href="https://world.openfoodfacts.org/country/comoros">25</a></td></tr>
+      <tr><td class="highlight country-column">Malawi</td><td><a href="https://world.openfoodfacts.org/country/malawi">25</a></td></tr>
+      <tr><td class="highlight country-column">alemania</td><td><a href="https://world.openfoodfacts.org/country/alemania">24</a></td></tr>
+      <tr><td class="highlight country-column">Cayman Islands</td><td><a href="https://world.openfoodfacts.org/country/cayman-islands">23</a></td></tr>
+      <tr><td class="highlight country-column">Wallis and Futuna</td><td><a href="https://world.openfoodfacts.org/country/wallis-and-futuna">22</a></td></tr>
+      <tr><td class="highlight country-column">Liberia</td><td><a href="https://world.openfoodfacts.org/country/liberia">22</a></td></tr>
+      <tr><td class="highlight country-column">Saint Vincent and the Grenadines</td><td><a href="https://world.openfoodfacts.org/country/saint-vincent-and-the-grenadines">21</a></td></tr>
+      <tr><td class="highlight country-column">British Virgin Islands</td><td><a href="https://world.openfoodfacts.org/country/british-virgin-islands">19</a></td></tr>
+      <tr><td class="highlight country-column">royaume-uni</td><td><a href="https://world.openfoodfacts.org/country/royaume-uni">19</a></td></tr>
+      <tr><td class="highlight country-column">Tajikstan</td><td><a href="https://world.openfoodfacts.org/country/tajikstan">18</a></td></tr>
+      <tr><td class="highlight country-column">Republika Srpska</td><td><a href="https://world.openfoodfacts.org/country/republika-srpska">17</a></td></tr>
+      <tr><td class="highlight country-column">Equatorial Guinea</td><td><a href="https://world.openfoodfacts.org/country/equatorial-guinea">16</a></td></tr>
+      <tr><td class="highlight country-column">fr:dom-tom</td><td><a href="https://world.openfoodfacts.org/country/fr:dom-tom">16</a></td></tr>
+      <tr><td class="highlight country-column">Nothern Mariana Islands</td><td><a href="https://world.openfoodfacts.org/country/nothern-mariana-islands">16</a></td></tr>
+      <tr><td class="highlight country-column">Anguilla</td><td><a href="https://world.openfoodfacts.org/country/anguilla">16</a></td></tr>
+      <tr><td class="highlight country-column">Burundi</td><td><a href="https://world.openfoodfacts.org/country/burundi">13</a></td></tr>
+      <tr><td class="highlight country-column">france-spain</td><td><a href="https://world.openfoodfacts.org/country/france-spain">12</a></td></tr>
+      <tr><td class="highlight country-column">polska</td><td><a href="https://world.openfoodfacts.org/country/polska">12</a></td></tr>
+      <tr><td class="highlight country-column">Dominica</td><td><a href="https://world.openfoodfacts.org/country/dominica">12</a></td></tr>
+      <tr><td class="highlight country-column">estados-unidos</td><td><a href="https://world.openfoodfacts.org/country/estados-unidos">11</a></td></tr>
+      <tr><td class="highlight country-column">Caribbean Netherlands</td><td><a href="https://world.openfoodfacts.org/country/caribbean-netherlands">11</a></td></tr>
+      <tr><td class="highlight country-column">benelux</td><td><a href="https://world.openfoodfacts.org/country/benelux">11</a></td></tr>
+      <tr><td class="highlight country-column">česko</td><td><a href="https://world.openfoodfacts.org/country/česko">11</a></td></tr>
+      <tr><td class="highlight country-column">East Germany</td><td><a href="https://world.openfoodfacts.org/country/east-germany">11</a></td></tr>
+      <tr><td class="highlight country-column">Turks and Caicos Islands</td><td><a href="https://world.openfoodfacts.org/country/turks-and-caicos-islands">11</a></td></tr>
+      <tr><td class="highlight country-column">Gambia</td><td><a href="https://world.openfoodfacts.org/country/gambia">11</a></td></tr>
+      <tr><td class="highlight country-column">la-reunion</td><td><a href="https://world.openfoodfacts.org/country/la-reunion">10</a></td></tr>
+      <tr><td class="highlight country-column">Grenada</td><td><a href="https://world.openfoodfacts.org/country/grenada">10</a></td></tr>
+      <tr><td class="highlight country-column">Bhutan</td><td><a href="https://world.openfoodfacts.org/country/bhutan">10</a></td></tr>
+      <tr><td class="highlight country-column">North Korea</td><td><a href="https://world.openfoodfacts.org/country/north-korea">9</a></td></tr>
+      <tr><td class="highlight country-column">reino-unido</td><td><a href="https://world.openfoodfacts.org/country/reino-unido">9</a></td></tr>
+      <tr><td class="highlight country-column">Central African Republic</td><td><a href="https://world.openfoodfacts.org/country/central-african-republic">9</a></td></tr>
+      <tr><td class="highlight country-column">South Sudan</td><td><a href="https://world.openfoodfacts.org/country/south-sudan">9</a></td></tr>
+      <tr><td class="highlight country-column">Palau</td><td><a href="https://world.openfoodfacts.org/country/palau">8</a></td></tr>
+      <tr><td class="highlight country-column">Swaziland</td><td><a href="https://world.openfoodfacts.org/country/swaziland">8</a></td></tr>
+      <tr><td class="highlight country-column">en-us</td><td><a href="https://world.openfoodfacts.org/country/en-us">8</a></td></tr>
+      <tr><td class="highlight country-column">Saint Kitts and Nevis</td><td><a href="https://world.openfoodfacts.org/country/saint-kitts-and-nevis">8</a></td></tr>
+      <tr><td class="highlight country-column">State of Palestine</td><td><a href="https://world.openfoodfacts.org/country/state-of-palestine">8</a></td></tr>
+      <tr><td class="highlight country-column">Cook Islands</td><td><a href="https://world.openfoodfacts.org/country/cook-islands">7</a></td></tr>
+      <tr><td class="highlight country-column">Iraqi Kurdistan</td><td><a href="https://world.openfoodfacts.org/country/iraqi-kurdistan">6</a></td></tr>
+      <tr><td class="highlight country-column">dom-tom</td><td><a href="https://world.openfoodfacts.org/country/dom-tom">6</a></td></tr>
+      <tr><td class="highlight country-column">hrvatska</td><td><a href="https://world.openfoodfacts.org/country/hrvatska">6</a></td></tr>
+      <tr><td class="highlight country-column">etats-unis</td><td><a href="https://world.openfoodfacts.org/country/etats-unis">6</a></td></tr>
+      <tr><td class="highlight country-column">Greenland</td><td><a href="https://world.openfoodfacts.org/country/greenland">6</a></td></tr>
+      <tr><td class="highlight country-column">scotland</td><td><a href="https://world.openfoodfacts.org/country/scotland">5</a></td></tr>
+      <tr><td class="highlight country-column">Soviet Union</td><td><a href="https://world.openfoodfacts.org/country/soviet-union">4</a></td></tr>
+      <tr><td class="highlight country-column">السعودية</td><td><a href="https://world.openfoodfacts.org/country/لسعودية">3</a></td></tr>
+      <tr><td class="highlight country-column">Galmudug</td><td><a href="https://world.openfoodfacts.org/country/galmudug">4</a></td></tr>
+      <tr><td class="highlight country-column">franța</td><td><a href="https://world.openfoodfacts.org/country/franta">4</a></td></tr>
+      <tr><td class="highlight country-column">Vatican City</td><td><a href="https://world.openfoodfacts.org/country/vatican-city">4</a></td></tr>
+      <tr><td class="highlight country-column">Eritrea</td><td><a href="https://world.openfoodfacts.org/country/eritrea">3</a></td></tr>
+      <tr><td class="highlight country-column">unknown</td><td><a href="https://world.openfoodfacts.org/country/unknown">3</a></td></tr>
+      <tr><td class="highlight country-column">United States Minor Outlying Islands</td><td><a href="https://world.openfoodfacts.org/country/united-states-minor-outlying-islands">3</a></td></tr>
+      <tr><td class="highlight country-column">bolivia-espanol</td><td><a href="https://world.openfoodfacts.org/country/bolivia-espanol">2</a></td></tr>
+      <tr><td class="highlight country-column">Bonaire<td><a href="https://world.openfoodfacts.org/country/bonaire">2</a></td></tr>
+      <tr><td class="highlight country-column">Cocos (Keeling) Islands</td><td><a href="https://world.openfoodfacts.org/country/cocos-(keeling)-islands">2</a></td></tr>
+      <tr><td class="highlight country-column">Samoa</td><td><a href="https://world.openfoodfacts.org/country/samoa">2</a></td></tr>
+      <tr><td class="highlight country-column">Sao Tomé and Príncipe</td><td><a href="https://world.openfoodfacts.org/country/sao-tome-and-principe">2</a></td></tr>
+      <tr><td class="highlight country-column">Sint Eustatius</td><td><a href="https://world.openfoodfacts.org/country/sint-eustatius">2</a></td></tr>
+      <tr><td class="highlight country-column">Timor-Leste</td><td><a href="https://world.openfoodfacts.org/country/timor-leste">2</a></td></tr>
+      <tr><td class="highlight country-column">Christmas Island</td><td><a href="https://world.openfoodfacts.org/country/christmas-island">1</a></td></tr>
+      <tr><td class="highlight country-column">Ascension Island</td><td><a href="https://world.openfoodfacts.org/country/ascension-island">1</a></td></tr>
+      <tr><td class="highlight country-column">Turkmenistan</td><td><a href="https://world.openfoodfacts.org/country/turkmenistan">1</a></td></tr>
     </tbody>
   </table>
+  </div>
 
   

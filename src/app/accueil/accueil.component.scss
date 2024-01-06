@@ -1,0 +1,49 @@
+/* Commentaires ajoutés au code CSS */
+
+/* Style pour le conteneur de bienvenue */
+.welcome-container {
+  max-width: 800px; /* Largeur maximale du conteneur de bienvenue */
+  margin: 0 auto; /* Centrage du conteneur sur la page */
+  text-align: center; /* Alignement du texte au centre dans le conteneur */
+  padding: 60px; /* Espacement intérieur du conteneur */
+  background-color: #f5f1ec; /* Couleur de fond du conteneur de bienvenue */
+  border-radius: 10px; /* Coins arrondis du conteneur de bienvenue */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour du conteneur de bienvenue */
+  margin-top: 10%; /* Espacement supérieur du conteneur de bienvenue */
+  margin-bottom: 11%; /* Espacement inférieur du conteneur de bienvenue */
+}
+
+/* Style pour le titre principal du conteneur de bienvenue */
+.display-4 {
+  font-size: 2.5rem; /* Taille de police du titre principal */
+  color: #343a40; /* Couleur du texte du titre principal */
+}
+
+/* Style pour le texte d'introduction du conteneur de bienvenue */
+.lead {
+  font-size: 1.25rem; /* Taille de police du texte d'introduction */
+  color: #495057; /* Couleur du texte d'introduction */
+}
+
+/* Style pour le bouton primaire du conteneur de bienvenue */
+.btn-primary {
+  background-color: #007bff; /* Couleur de fond du bouton primaire */
+  color: #fff; /* Couleur du texte du bouton primaire */
+  font-size: 1.2rem; /* Taille de police du bouton primaire */
+  padding: 10px 20px; /* Espacement intérieur du bouton primaire */
+  text-decoration: none; /* Suppression du soulignement du texte du bouton primaire */
+  border-radius: 5px; /* Coins arrondis du bouton primaire */
+  transition: background-color 0.3s ease; /* Transition de couleur de fond au survol du bouton primaire */
+}
+
+/* Style pour le survol du bouton primaire du conteneur de bienvenue */
+.btn-primary:hover {
+  background-color: #0056b3; /* Couleur de fond au survol du bouton primaire */
+}
+
+/* Style de base pour le corps de la page (peut être redondant) */
+body {
+  font-family: 'Arial', sans-serif; /* Utilisation de la police Arial ou sans-serif */
+  margin: 0; /* Suppression des marges par défaut du corps de la page */
+  padding: 0; /* Suppression des espacements par défaut du corps de la page */
+}

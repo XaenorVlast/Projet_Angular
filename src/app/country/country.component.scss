@@ -1,43 +1,46 @@
+/* Commentaires ajoutés au code CSS du tableau */
+
+/* Style de base pour le corps de la page */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f5f1ec;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  font-family: 'Arial', sans-serif; /* Utilisation de la police Arial ou sans-serif */
+  background-color: #f5f1ec; /* Couleur de fond pour la page */
+  margin: 0; /* Suppression des marges par défaut du corps de la page */
+  padding: 0; /* Suppression des espacements par défaut du corps de la page */
+  display: flex; /* Utilisation d'un conteneur flexible pour le centrage vertical et horizontal */
+  align-items: center; /* Alignement vertical au centre */
+  justify-content: center; /* Alignement horizontal au centre */
+  height: 100vh; /* Hauteur de la page équivalente à 100% de la hauteur visible */
 }
 
-.table-container {
-  width: 80%; /* Ajustez la largeur selon vos besoins */
+/* Style pour le tableau des pays */
+.country-table {
+  width: 50%; /* Largeur du tableau équivalente à 50% de la largeur de son conteneur */
+  margin: 20px auto; /* Marge extérieure du tableau avec centrage automatique */
+  border-collapse: collapse; /* Fusion des bordures des cellules du tableau */
+  align-items: center; /* Alignement vertical au centre */
 }
 
-/* Ajoutez ces styles à votre fichier CSS ou SCSS */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-family: 'Arial', sans-serif;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Style pour les en-têtes et les cellules du tableau */
+.country-table th,
+.country-table td {
+  border: 1px solid #ddd; /* Bordure de 1 pixel solide avec couleur définie */
+  padding: 8px; /* Espacement intérieur des cellules */
+  text-align: left; /* Alignement du texte à gauche dans les cellules */
+  height: 40px; /* Hauteur fixe pour les cellules */
 }
 
-thead {
-  background-color: #007bff;
-  color: #fff;
+/* Style pour les cellules d'en-tête du tableau de nutrition (non utilisé dans le code) */
+.nutrition-facts th {
+  background-color: #f2f2f2; /* Couleur de fond des cellules d'en-tête */
+  width: 100px; /* Largeur fixe des cellules d'en-tête */
 }
 
-th, td {
-  padding: 4px; /* Réduction de la taille entre les colonnes */
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+/* Style pour mettre en surbrillance (gras) certains éléments du tableau */
+.highlight {
+  font-weight: bold; /* Texte en gras pour les éléments en surbrillance */
 }
 
-tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-tbody tr:hover {
-  background-color: #f1f1f1;
+/* Style pour la colonne des pays (non utilisé dans le code) */
+.country-column {
+  width: 50%; /* Largeur fixe de la colonne des pays (50% pour chacune) */
 }
