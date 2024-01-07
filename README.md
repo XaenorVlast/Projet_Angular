@@ -13,6 +13,8 @@ Pour installer le site, tout d'abord il faut s'assurer d'avoir le logiciel Node.
 A la fin, on lance l'application en exécutant cette commande : ng serve qui permet d'accéder au site via l'URL suivante : http://localhost:4200/
 
 ##  If using your own server (like json-server), please add dataset.
+On a utilisé les données JSON en API du site OpenFoodFacts pour mettre dans le site les produits à afficher ainsi que manipuler correctement les données à mettre. Voici la dataset : 
+https://world.openfoodfacts.org/cgi/search.pl?search_simple=1&action=process&json=1&page_size=${pageSize}&page=${page} 
 
 ## Who have done the project ?
 Les contributeurs du projet sont Maxence MAYOLY, Loick GOMEZ et Clément CHARABOT. 
